@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Строительство частных домов в Москве и МО — СТРОЙРЕМОНТ</title>
+<meta content="Строительство частных домов в Москве и Московской области: дома из газобетона, кирпича, блоков, дерева, каркасные и монолитные дома — от подготовки участка и фундамента до коробки, кровли, фасада и инженерных работ." name="description"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F1724'/%3E%3Crect x='5' y='5' width='54' height='54' fill='none' stroke='%23FFFFFF' stroke-width='2'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='600' fill='%23FFFFFF'%3ESR%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script>
+  window.SITE_PHONE = { DISPLAY: '+7 966 389 21 33', LINK: 'tel:+79663892133' };
+  document.addEventListener('DOMContentLoaded', function(){
+    var phone = window.SITE_PHONE; if(!phone) return;
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+      a.setAttribute('href', phone.LINK);
+      var small = a.querySelector('small');
+      if(small){ a.innerHTML = phone.DISPLAY + small.outerHTML; } else { a.textContent = phone.DISPLAY; }
+    });
+    document.querySelectorAll('.phone').forEach(function(el){
+      var small = el.querySelector('small');
+      if(el.tagName.toLowerCase() === 'a'){ el.setAttribute('href', phone.LINK); }
+      if(small){ el.innerHTML = phone.DISPLAY + small.outerHTML; } else { el.textContent = phone.DISPLAY; }
+    });
+    document.querySelectorAll('input[type="tel"]').forEach(function(inp){ inp.setAttribute('placeholder', phone.DISPLAY); });
+  });
+</script>
+<style>
+/* ===== ДИЗАЙН-СИСТЕМА (из index.html) ===== */
+:root{
+  /* Строгая монохромная палитра */
+  --sand:#FFFFFF;
+  --sand-deep:#F1F2F3;
+  --graphite:#202124;
+  --clay:#111111;
+  --btn-blue:#111111;
+  --btn-blue-hover:#303236;
+  --accent:#33363A;
+  --accent-2:#D8DADD;
+  --accent-soft:#F1F2F3;
+  --olive:#55595F;
+  --stone:#73777D;
+  --ink-70:#3F4348;
+  --border:#D9DCE0;
+  --border-strong:#202124;
+  --white:#FFFFFF;
+  /* Шрифты */
+  --f-body:'Inter',Arial,sans-serif;
+  --f-display:'Roboto Condensed','Inter',sans-serif;
+  --f-mono:'IBM Plex Mono','Courier New',monospace;
+  /* Spacing */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px;
+  --s-6:28px; --s-7:36px; --s-8:48px; --s-9:64px; --s-10:88px;
+  --radius:0;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --container:1400px;
+  --edge:clamp(18px,4vw,56px);
+}
+
+/* Полностью убираем скругления */
+*, *::before, *::after { border-radius:0!important; box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+body{ margin:0; font-family:var(--f-body); color:var(--graphite); background:var(--sand); line-height:1.55; font-weight:400; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+img,svg{ display:block; max-width:100%; height:auto; }
+a{ color:inherit; text-decoration:none; transition:color .18s var(--ease),transform .12s var(--ease); }
+a:hover,a:focus{ color:var(--clay); text-decoration:underline; transform:translateY(-1px); }
+a:focus-visible{ outline:3px solid rgba(32,33,36,.18); outline-offset:3px; }
+::selection{ background:#202124!important; color:#FFFFFF!important; }
+:focus-visible{ outline:2px solid #55595F; outline-offset:2px; }
+.wrap{ max-width:var(--container); margin:0 auto; padding:0 var(--edge); }
+section{ position:relative; }
+.pad-lg{ padding:clamp(48px,6vw,96px) 0; }
+.pad-md{ padding:clamp(36px,4.5vw,64px) 0; }
+.pad-sm{ padding:clamp(24px,3vw,40px) 0; }
+.divider{ border-top:1px solid var(--border); }
+.dark{ background:var(--graphite); color:var(--sand); }
+.dark .muted{ color:#94A3B8; }
+h1,h2,h3,h4{ font-family:var(--f-display); font-weight:600; margin:0; letter-spacing:-.01em; color:inherit; }
+p{ margin:0; }
+
+/* Eyebrow */
+.eyebrow{ display:flex; align-items:center; gap:10px; font-family:var(--f-mono); font-size:13.2px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:var(--s-4); }
+.eyebrow::before{ content:""; width:22px; height:1px; background:var(--accent); }
+.dark .eyebrow{ color:var(--accent-2); }
+.dark .eyebrow::before{ background:var(--accent-2); }
+
+h2.section-title{ font-size:clamp(31.2px,3.6vw,50.4px); font-weight:600; line-height:1.06; max-width:20ch; }
+.lead{ font-size:18px; color:var(--ink-70); max-width:56ch; line-height:1.7; font-weight:400; }
+.dark .lead{ color:#CBD5E1; }
+.center{ text-align:center; margin-left:auto; margin-right:auto; }
+
+/* Кнопки */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; background:var(--btn-blue); color:#fff!important; padding:14px 24px; text-decoration:none; font-family:var(--f-mono); font-weight:600; font-size:15.6px; text-transform:uppercase; letter-spacing:.06em; border:1px solid var(--btn-blue); cursor:pointer; transition:transform .12s var(--ease),background .18s var(--ease),box-shadow .18s var(--ease); position:relative; overflow:hidden; will-change:transform; }
+.btn:hover,.btn:focus-visible{ transform:translateY(-2px); background:var(--btn-blue-hover); color:#fff!important; border-color:var(--btn-blue-hover); text-decoration:none; box-shadow:0 10px 24px rgba(32,33,36,.22); }
+.btn:active{ transform:translateY(0) scale(.96)!important; }
+.btn .arrow{ transition:transform .25s var(--ease); font-family:var(--f-body); }
+.btn:hover .arrow{ transform:translateX(4px); }
+.btn-outline{ background:transparent!important; color:var(--graphite)!important; border:1px solid var(--border-strong); }
+.btn-outline:hover,.btn-outline:focus-visible{ background:var(--graphite)!important; color:#fff!important; border-color:var(--graphite)!important; }
+.btn-lg{ padding:17px 30px; font-size:16.8px; }
+.btn:disabled{ opacity:.4; cursor:not-allowed; transform:none; }
+.btn-accent{ background:#202124!important; border-color:#202124!important; }
+.btn-accent:hover{ background:#3B3E42!important; border-color:#3B3E42!important; }
+.btn .ripple{ position:absolute; border-radius:50%!important; background:rgba(255,255,255,.55); transform:scale(0); animation:rippleAnim .6s var(--ease) forwards; pointer-events:none; }
+@keyframes rippleAnim{ to{ transform:scale(2.6); opacity:0; } }
+
+button{ font-family:var(--f-mono); font-size:15.6px; padding:8px 12px; border:1px solid transparent; background:transparent; color:inherit; cursor:pointer; line-height:1; }
+
+/* Изображения */
+.ph{ background:linear-gradient(180deg,var(--white),var(--sand-deep)); border:1px solid var(--border); position:relative; overflow:hidden; }
+.ph-photo{ aspect-ratio:4/5; }
+.ph-wide{ aspect-ratio:16/9; }
+.ph-square{ aspect-ratio:1/1; }
+.ph img.zoomimg{ width:100%; height:100%; object-fit:cover; transition:transform .5s var(--ease); }
+.ph:hover img.zoomimg{ transform:scale(1.04); }
+
+.spec-tag{ position:absolute; z-index:2; font-family:var(--f-mono); font-size:13.2px; letter-spacing:.06em; text-transform:uppercase; color:#fff; background:var(--graphite); padding:10px 14px; display:flex; flex-direction:column; gap:2px; }
+.spec-tag b{ font-family:var(--f-mono); font-weight:500; font-size:15px; color:#fff; }
+.spec-tag span{ color:#94A3B8; font-size:12px; }
+.badge-hot{ position:absolute; z-index:3; top:14px; right:14px; background:#202124; color:#fff; font-family:var(--f-mono); font-size:13.2px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; padding:8px 12px; display:flex; align-items:center; gap:6px; box-shadow:none; }
+.badge-hot .dot{ width:6px; height:6px; background:#fff; animation:blinkDot 1.4s ease-in-out infinite; }
+@keyframes blinkDot{ 0%,100%{opacity:1;} 50%{opacity:.25;} }
+
+/* Scroll reveal */
+.reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s var(--ease),transform .6s var(--ease); }
+.reveal.in{ opacity:1; transform:translateY(0); }
+
+/* Scroll progress */
+.scroll-progress{ position:fixed; top:0; left:0; height:3px; width:0%; background:#33363A; z-index:80; transition:width .1s linear; }
+
+/* Back to top */
+.back-to-top{ position:fixed; right:22px; bottom:22px; width:46px; height:46px; background:var(--graphite); color:#fff; border:none; display:flex; align-items:center; justify-content:center; font-size:19.2px; cursor:pointer; z-index:65; opacity:0; visibility:hidden; transform:translateY(12px) scale(.85); transition:opacity .25s var(--ease),transform .25s var(--ease),background .2s var(--ease),visibility .25s; box-shadow:0 10px 24px rgba(15,23,36,.25); }
+.back-to-top.show{ opacity:1; visibility:visible; transform:translateY(0) scale(1); }
+.back-to-top:hover{ background:#3B3E42; transform:translateY(-3px) scale(1.05); }
+
+/* Tilt */
+.tilt{ --mx:50%; --my:50%; position:relative; will-change:transform; }
+.tilt::before{ content:""; position:absolute; inset:0; pointer-events:none; opacity:0; background:radial-gradient(180px circle at var(--mx) var(--my),rgba(32,33,36,.08),transparent 70%); transition:opacity .25s var(--ease); z-index:0; }
+.tilt:hover::before{ opacity:1; }
+.tilt > *{ position:relative; z-index:1; }
+
+/* ===== HEADER ===== */
+header{ position:fixed; top:0; left:0; right:0; z-index:50; background:transparent; border-bottom:1px solid transparent; transition:background .3s var(--ease),border-color .3s var(--ease); }
+header.solid{ background:rgba(255,255,255,.92); backdrop-filter:blur(6px); border-color:var(--border); }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; gap:20px; padding:16px var(--edge); min-height:64px; }
+.logo{ font-family:var(--f-display); font-weight:700; font-size:19.2px; letter-spacing:.01em; text-decoration:none; display:flex; align-items:baseline; gap:8px; flex-shrink:0; }
+.logo .mark{ font-family:var(--f-mono); font-weight:500; font-size:16.8px; border:1px solid var(--graphite); padding:3px 6px; background:#202124; color:#fff; border-color:#202124; transition:transform .25s var(--ease); }
+.logo:hover .mark{ transform:rotate(-6deg) scale(1.08); }
+.logo span{ font-family:var(--f-mono); font-weight:400; font-size:12px; color:var(--stone); letter-spacing:.02em; text-transform:uppercase; }
+nav.main-nav{ flex:1; display:flex; justify-content:center; min-width:0; }
+nav.main-nav ul{ list-style:none; display:flex; align-items:center; justify-content:center; gap:clamp(18px,2.2vw,34px); margin:0; padding:0; font-size:14.4px; font-weight:400; white-space:nowrap; }
+nav.main-nav li{ position:relative; display:flex; align-items:center; }
+nav.main-nav a{ text-decoration:none; position:relative; padding:5px 0; display:flex; align-items:center; gap:5px; line-height:1.2; }
+nav.main-nav a::after{ content:""; position:absolute; left:0; right:100%; bottom:0; height:1px; background:#33363A; transition:right .25s var(--ease); }
+nav.main-nav a:hover::after{ right:0; }
+.has-dropdown .caret{ font-size:10.8px; transition:transform .2s var(--ease); }
+.has-dropdown:hover .caret{ transform:rotate(180deg); }
+.has-dropdown{ padding-bottom:14px; margin-bottom:-14px; }
+.dropdown{ position:absolute; top:100%; left:50%; transform:translateX(-50%); background:#fff; border:1px solid var(--border); border-top:2px solid #33363A; width:280px; padding:8px; display:none; grid-template-columns:1fr; gap:2px; box-shadow:0 18px 40px rgba(15,23,36,.14); max-height:60vh; overflow-y:auto; z-index:20; }
+.has-dropdown:hover .dropdown{ display:grid; }
+.dropdown a{ padding:9px 10px; font-size:15.6px; }
+.dropdown a:hover{ background:var(--sand-deep); color:var(--graphite); text-decoration:none; }
+.dropdown a::after{ display:none; }
+.header-cta{ display:flex; align-items:center; gap:14px; flex-shrink:0; }
+.phone-block{ display:flex; flex-direction:column; align-items:flex-end; gap:2px; }
+.phone{ font-family:var(--f-mono); font-weight:500; font-size:15.6px; text-decoration:none; display:flex; flex-direction:column; align-items:flex-end; line-height:1.3; }
+.phone small{ font-weight:400; font-size:12px; color:var(--stone); font-family:var(--f-body); }
+.menu-trigger{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
+.menu-trigger span{ width:20px; height:1px; background:var(--graphite); }
+.mobile-menu{ position:fixed; inset:0; background:var(--sand); z-index:60; display:flex; flex-direction:column; justify-content:space-between; padding:var(--s-6) calc(var(--edge) + 8px); transform:translateY(-100%); transition:transform .35s var(--ease); overflow-y:auto; }
+.mobile-menu.open{ transform:translateY(0); }
+.mobile-menu-top{ display:flex; justify-content:space-between; align-items:center; }
+.mobile-menu ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px; }
+.mobile-menu a{ font-family:var(--f-display); font-size:26.4px; font-weight:400; text-decoration:none; display:block; padding:8px 0; border-bottom:1px solid var(--border); }
+.mobile-menu-close{ background:none; border:1px solid var(--border); width:34px; height:34px; cursor:pointer; font-size:18px; }
+.mobile-menu-foot{ font-size:15.6px; color:var(--stone); padding-top:20px; display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+
+/* ===== HERO ===== */
+.hero{ padding-top:clamp(96px,14vw,140px); padding-bottom:0; border-bottom:1px solid var(--border); background:#fff!important; overflow:hidden; }
+.hero-grid{ display:grid; grid-template-columns:.95fr 1.05fr; gap:var(--s-9); align-items:center; padding-bottom:var(--s-8); }
+.hero-copy h1{ font-size:clamp(38.4px,5.28vw,69.6px); font-weight:700; line-height:1.04; max-width:16ch; margin-bottom:var(--s-5); letter-spacing:-.025em; }
+.hero-copy .lead{ margin-bottom:var(--s-6); }
+.hero-checks{ list-style:none; margin:0 0 var(--s-6); padding:0; display:grid; gap:12px; }
+.hero-checks li{ display:flex; align-items:flex-start; gap:12px; font-size:16.2px; color:var(--ink-70); }
+.hero-checks li::before{ content:"✓"; font-family:var(--f-mono); font-weight:700; color:#fff; background:#202124; width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; font-size:13.2px; flex-shrink:0; margin-top:1px; }
+.hero-btns{ display:flex; gap:14px; flex-wrap:wrap; }
+.hero-visual{ position:relative; }
+.hero-visual .ph-photo{ aspect-ratio:4/5; max-height:520px; width:100%; }
+.stat-band{ border-top:1px solid var(--border); padding:var(--s-6) 0; display:grid; grid-template-columns:repeat(3,1fr); column-gap:28px; }
+.stat-band .stat{ padding:8px 24px 8px 0; border-right:1px solid var(--border); }
+.stat-band .stat:last-child{ border-right:none; }
+.stat b{ font-family:var(--f-display); font-size:clamp(31.2px,3.6vw,48px); font-weight:700; display:block; line-height:1; color:var(--graphite); }
+.stat span{ font-family:var(--f-mono); font-size:12.6px; color:var(--stone); text-transform:uppercase; letter-spacing:.05em; display:block; margin-top:6px; }
+
+/* ===== QUICK (3 карточки-симптома) ===== */
+.quick-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; background:var(--white); border:1px solid var(--border-strong); }
+.quick-card{ position:relative; background:var(--white); min-height:190px; padding:28px; display:flex; flex-direction:column; border-right:1px solid var(--border); transition:background .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease); overflow:hidden; }
+.quick-card:last-child{ border-right:none; }
+.quick-card::before{ content:""; position:absolute; left:0; top:0; width:100%; height:3px; background:#33363A; transform:scaleX(0); transform-origin:left; transition:transform .25s var(--ease); }
+.quick-card:hover{ background:var(--sand-deep); transform:translateY(-3px); box-shadow:0 14px 32px rgba(15,23,36,.08); z-index:1; }
+.quick-card:hover::before{ transform:scaleX(1); }
+.quick-num{ font-family:var(--f-mono); font-size:11px; letter-spacing:.06em; color:var(--stone); margin-bottom:18px; display:flex; align-items:center; justify-content:center; width:32px; height:32px; background:#202124; color:#fff; }
+.quick-card h3{ font-size:19px; font-weight:600; line-height:1.25; margin:0 0 12px; color:var(--graphite); }
+.quick-card p{ font-size:14px; line-height:1.65; color:var(--ink-70); margin:0; max-width:34ch; }
+
+/* ===== ДИАГНОСТИКА ===== */
+.roof-diagnostic{ background:var(--sand); }
+.roof-diagnostic-grid{ display:grid; grid-template-columns:.78fr 1.22fr; gap:var(--s-9); align-items:stretch; }
+.roof-diagnostic-lead{ border:1px solid var(--border-strong); background:var(--graphite); color:var(--sand); padding:clamp(28px,4vw,52px); display:flex; flex-direction:column; justify-content:space-between; min-height:390px; }
+.roof-diagnostic-lead .eyebrow{ color:var(--accent-2); }
+.roof-diagnostic-lead .eyebrow::before{ background:var(--accent-2); }
+.roof-diagnostic-lead h2{ font-size:clamp(28px,3.2vw,44px); font-weight:600; line-height:1.08; max-width:12ch; margin:18px 0 20px; }
+.roof-diagnostic-lead p{ color:#CBD5E1; max-width:42ch; font-size:14px; line-height:1.7; }
+.roof-diagnostic-mark{ font-family:var(--f-mono); font-size:11px; letter-spacing:.08em; color:#94A3B8; text-transform:uppercase; }
+.roof-diagnostic-list{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--border); border:1px solid var(--border); }
+.roof-diagnostic-item{ background:var(--white); padding:28px; min-height:194px; position:relative; transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s var(--ease); }
+.roof-diagnostic-item:hover{ transform:translateY(-3px); background:var(--sand-deep); box-shadow:0 16px 32px rgba(15,23,36,.08); z-index:1; }
+.roof-diagnostic-item .num{ font-family:var(--f-mono); font-size:11px; color:#33363A; display:block; margin-bottom:34px; }
+.roof-diagnostic-item h3{ font-size:17px; font-weight:600; margin:0 0 9px; line-height:1.25; }
+.roof-diagnostic-item p{ font-size:13px; line-height:1.65; color:var(--ink-70); margin:0; max-width:34ch; }
+
+/* ===== СИСТЕМА КРОВЛИ ===== */
+.roof-system{ background:var(--white); }
+.roof-system-head{ display:grid; grid-template-columns:.8fr 1.2fr; gap:var(--s-9); align-items:end; margin-bottom:36px; }
+.roof-system-head .lead{ max-width:62ch; margin:0; }
+.roof-system-grid{ display:grid; grid-template-columns:1.25fr .75fr; gap:var(--s-5); }
+.roof-system-main{ border:1px solid var(--border-strong); background:var(--graphite); color:var(--sand); padding:32px; min-height:360px; position:relative; overflow:hidden; }
+.roof-system-main::after{ content:"ФУНДАМЕНТ"; position:absolute; right:-10px; bottom:-22px; font-family:var(--f-display); font-size:120px; line-height:1; color:rgba(255,255,255,.035); font-weight:700; }
+.roof-system-main h3{ font-size:24px; font-weight:600; max-width:14ch; margin:0 0 18px; line-height:1.1; }
+.roof-system-main p{ color:#CBD5E1; font-size:13px; line-height:1.7; max-width:54ch; }
+.roof-system-points{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:30px; position:relative; z-index:1; }
+.roof-system-point{ border:1px solid #334155; padding:16px; background:rgba(255,255,255,.025); }
+.roof-system-point b{ font-family:var(--f-mono); font-size:11px; color:var(--accent-2); display:block; margin-bottom:7px; }
+.roof-system-point span{ font-size:12px; color:#CBD5E1; line-height:1.5; display:block; }
+.roof-system-side{ display:grid; grid-template-rows:1fr 1fr; gap:var(--s-5); }
+.roof-system-card{ border:1px solid var(--border); padding:26px; background:var(--sand); display:flex; flex-direction:column; justify-content:space-between; min-height:170px; }
+.roof-system-card.accent{ background:var(--sand-deep); border-color:var(--border-strong); }
+.roof-system-card .label{ font-family:var(--f-mono); font-size:10px; letter-spacing:.07em; text-transform:uppercase; color:var(--stone); }
+.roof-system-card h3{ font-size:18px; font-weight:600; margin:18px 0 8px; }
+.roof-system-card p{ font-size:12px; line-height:1.6; color:var(--ink-70); margin:0; }
+.roof-compare{ display:grid; grid-template-columns:repeat(2,1fr); gap:var(--s-5); margin-top:36px; }
+.roof-compare-card{ border:1px solid var(--border); padding:24px; background:var(--white); }
+.roof-compare-card.is-accent{ border-top:3px solid #202124; padding-top:22px; }
+.roof-compare-card .label{ font-family:var(--f-mono); font-size:10px; text-transform:uppercase; letter-spacing:.06em; color:var(--stone); }
+.roof-compare-card h3{ font-size:20px; font-weight:600; margin:12px 0; }
+.roof-compare-card ul{ margin:0; padding-left:17px; color:var(--ink-70); font-size:12.5px; line-height:1.8; }
+
+/* ===== КАТЕГОРИИ ===== */
+.cat-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--s-5); }
+.cat-card{ position:relative; overflow:hidden; border:1px solid var(--border); background:var(--white); cursor:pointer; display:block; transition:transform .25s var(--ease),box-shadow .25s var(--ease); border-top:3px solid transparent; }
+.cat-card:hover{ transform:translateY(-4px); box-shadow:0 20px 40px rgba(15,23,36,.10); border-top-color:#202124; }
+.cat-card .ph{ aspect-ratio:5/4; }
+.cat-card .cat-label{ padding:16px; display:flex; flex-direction:column; gap:10px; }
+.cat-card .cat-label-top{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.cat-card h4{ font-size:17px; font-weight:600; }
+.cat-card p{ font-size:14px; color:var(--stone); line-height:1.6; }
+.cat-card .cat-arrow{ font-family:var(--f-mono); font-size:14px; color:#fff; background:#202124; width:24px; height:24px; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:transform .2s var(--ease); }
+.cat-card:hover .cat-arrow{ transform:translateX(3px); }
+
+/* ===== ПРЕИМУЩЕСТВА ===== */
+.adv-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border); }
+.adv-item{ background:var(--white); padding:var(--s-6); display:flex; flex-direction:column; gap:10px; transition:background .2s var(--ease),transform .2s var(--ease); }
+.adv-item:hover{ background:var(--sand-deep); transform:translateY(-2px); }
+.adv-item .adv-num{ font-family:var(--f-mono); font-size:13.2px; color:#33363A; font-weight:600; }
+.adv-item h3{ font-size:18px; font-weight:600; line-height:1.35; }
+.adv-item p{ font-size:14px; color:var(--ink-70); line-height:1.6; }
+
+/* ===== ПРОЦЕСС ===== */
+.steps-row{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border); }
+.step{ background:var(--white); padding:var(--s-6); display:flex; flex-direction:column; gap:10px; transition:background .2s var(--ease); }
+.step:hover{ background:var(--sand-deep); }
+.step .num{ font-family:var(--f-mono); font-size:28.8px; font-weight:300; color:#33363A; }
+.step h3{ font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.03em; line-height:1.35; }
+.step p{ font-size:13px; color:var(--stone); line-height:1.6; }
+
+/* ===== ОБЛАСТЬ ВЫЕЗДА ===== */
+.area-grid{ display:grid; grid-template-columns:1fr 1fr; gap:var(--s-9); align-items:stretch; }
+.area-info{ border:1px solid var(--border); background:var(--white); padding:clamp(24px,3vw,38px); display:flex; flex-direction:column; justify-content:space-between; }
+.area-list{ list-style:none; padding:0; margin:28px 0 24px; }
+.area-list li{ padding:13px 0; font-family:var(--f-mono); font-size:15px; border-bottom:1px solid var(--border); color:var(--ink-70); }
+.area-list li:first-child{ border-top:1px solid var(--border); }
+.map-ph{ height:100%; min-height:430px; aspect-ratio:auto; border:1px solid var(--border-strong); background:var(--sand-deep); position:relative; overflow:hidden; }
+.map-ph iframe{ width:100%; height:100%; border:0; display:block; filter:grayscale(.35); }
+.map-ph::before{ content:'МОСКВА / МО'; position:absolute; top:14px; left:14px; z-index:2; background:var(--graphite); color:#fff; padding:7px 10px; font-family:var(--f-mono); font-size:10px; letter-spacing:.05em; }
+.map-full-link{ position:absolute; bottom:14px; right:14px; z-index:2; background:#202124; color:#fff!important; font-family:var(--f-mono); font-size:13px; text-transform:uppercase; letter-spacing:.04em; padding:9px 14px; text-decoration:none!important; }
+.map-full-link:hover{ background:#3B3E42; transform:none; }
+
+/* ===== FAQ ===== */
+.faq-list{ max-width:900px; }
+.faq-item{ border-bottom:1px solid var(--border); padding:var(--s-4) 0; }
+.faq-q{ display:flex; align-items:center; justify-content:space-between; gap:20px; cursor:pointer; background:none; border:none; width:100%; text-align:left; padding:0; font-family:var(--f-body); }
+.faq-q h3{ font-size:17px; font-weight:500; margin:0; }
+.faq-q .plus{ font-family:var(--f-mono); font-size:19.2px; font-weight:400; flex-shrink:0; transition:transform .3s var(--ease); color:#33363A; }
+.faq-item.open .faq-q .plus{ transform:rotate(45deg); }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .35s var(--ease); }
+.faq-item.open .faq-a{ max-height:320px; }
+.faq-a p{ font-size:15.6px; color:var(--ink-70); padding-top:var(--s-3); line-height:1.7; max-width:64ch; }
+
+/* ===== FINAL CTA ===== */
+.final-cta{ overflow:hidden; position:relative; background:#202124!important; }
+.final-cta .wrap{ position:relative; z-index:1; }
+.final-cta h2{ font-size:clamp(33.6px,4.32vw,60px); font-weight:700; max-width:16ch; line-height:1.06; }
+.final-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:var(--s-9); align-items:start; }
+.final-box{ padding:34px; background:#17181B!important; border:1px solid #3B3E42!important; box-shadow:none!important; }
+.final-form-head{ padding-bottom:22px; margin-bottom:22px; border-bottom:1px solid #3B3E42; }
+.final-form-kicker{ display:block; font-family:var(--f-display); font-size:13.2px; line-height:1; text-transform:uppercase; letter-spacing:.12em; color:#AEB2B8; margin-bottom:12px; }
+.final-form-head h3{ font-size:clamp(22px,2.5vw,32px); line-height:1.08; color:#fff; margin:0 0 10px; }
+.final-form-head p{ font-size:15px; line-height:1.65; color:#BFC3C8; max-width:52ch; }
+.final-contact-form{ display:flex; flex-direction:column; gap:13px; }
+.final-form-row{ display:grid; grid-template-columns:1fr 1fr; gap:13px; }
+.final-contact-form label{ display:flex; flex-direction:column; gap:7px; }
+.final-contact-form label>span{ font-family:var(--f-display); font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#AEB2B8; }
+.final-contact-form input,.final-contact-form textarea{ width:100%; background:#202124; color:#fff; border:1px solid #45484D; padding:14px 15px; font:16px/1.45 'Inter',Arial,sans-serif; outline:none; transition:border-color .18s,background .18s; }
+.final-contact-form textarea{ min-height:88px; resize:vertical; }
+.final-contact-form input::placeholder,.final-contact-form textarea::placeholder{ color:#777C83; opacity:1; }
+.final-contact-form input:focus,.final-contact-form textarea:focus{ border-color:#D8DADD; background:#24262A; }
+.final-contact-form .btn{ align-self:flex-start; margin-top:2px; }
+.final-form-note{ font-size:12px!important; line-height:1.5!important; color:#7F848B!important; margin:0!important; font-family:var(--f-mono)!important; }
+.final-contacts{ display:flex; gap:10px; flex-wrap:wrap; margin-top:24px; }
+.final-phone{ display:inline-flex; align-items:center; border:1px solid #334155; padding:10px 14px; color:#fff; text-decoration:none; font-family:var(--f-mono); font-size:12px; }
+.final-phone:hover{ border-color:#D8DADD; color:#D8DADD; }
+
+/* ===== FOOTER ===== */
+footer{ padding:var(--s-8) 0 var(--s-6); font-size:15.6px; color:var(--stone); background:var(--sand); }
+.footer-statement{ font-family:var(--f-display); font-size:clamp(28.8px,4.8vw,57.6px); font-weight:700; line-height:1.1; max-width:20ch; margin-bottom:var(--s-8); letter-spacing:-.01em; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:var(--s-6); padding-bottom:var(--s-7); border-bottom:1px solid var(--border); }
+.footer-grid h4{ color:var(--graphite); font-family:var(--f-mono); font-size:12.6px; text-transform:uppercase; letter-spacing:.06em; margin-bottom:var(--s-4); font-weight:500; }
+.footer-grid ul{ list-style:none; padding:0; margin:0; }
+.footer-grid li{ margin-bottom:9px; }
+.footer-grid p{ line-height:1.7; }
+.footer-policies{ padding-top:var(--s-6); }
+.policy-links{ display:flex; gap:14px 24px; flex-wrap:wrap; margin-bottom:var(--s-6); }
+.policy-links button{ background:none; border:none; padding:0; font:inherit; font-family:var(--f-mono); font-size:13.2px; color:var(--stone); text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+.policy-links button:hover{ color:var(--graphite); }
+.footer-bottom{ font-family:var(--f-mono); font-size:12.6px; color:var(--stone); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+
+/* ===== MODAL ===== */
+.modal-overlay{ display:none; position:fixed; inset:0; background:rgba(15,23,36,.72); z-index:100; align-items:center; justify-content:center; padding:20px; }
+.modal-overlay.open{ display:flex; }
+.modal-box{ background:var(--sand); max-width:640px; width:100%; max-height:80vh; overflow-y:auto; border:1px solid var(--border-strong); padding:var(--s-7); }
+.modal-box h3{ margin-top:0; font-size:20.4px; font-weight:600; margin-bottom:var(--s-5); padding-right:40px; }
+.modal-box p{ font-size:15.6px; color:var(--ink-70); line-height:1.75; margin-bottom:14px; }
+.modal-close{ float:right; background:none; border:1px solid var(--border); width:30px; height:30px; cursor:pointer; font-size:15.6px; }
+.modal-close:hover{ border-color:var(--graphite); color:var(--graphite); }
+
+/* ===== COOKIE ===== */
+.cookie-banner{ display:none; position:fixed; left:0; right:0; bottom:0; background:var(--graphite); color:var(--sand); z-index:90; padding:var(--s-5) 0; }
+.cookie-banner.show{ display:block; }
+.cookie-inner{ display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.cookie-inner p{ margin:0; font-size:14px; color:#CBD5E1; max-width:700px; line-height:1.6; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1080px){
+  .hero-grid,.area-grid,.roof-diagnostic-grid,.roof-system-head,.roof-system-grid{ grid-template-columns:1fr; gap:28px; }
+  .roof-diagnostic-list,.roof-system-side{ grid-template-columns:repeat(2,1fr); grid-template-rows:none; }
+  .cat-grid{ grid-template-columns:repeat(2,1fr); }
+  .adv-grid{ grid-template-columns:repeat(2,1fr); }
+  .steps-row{ grid-template-columns:repeat(2,1fr); }
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+  .final-grid{ grid-template-columns:1fr; gap:36px; }
+  nav.main-nav{ display:none; }
+}
+@media (max-width:760px){
+  .header-cta .phone-block,.header-cta .btn{ display:none!important; }
+  .logo span{ display:none!important; }
+  .menu-trigger{ display:flex; }
+  .wrap{ padding:0 14px; }
+  .header-inner{ padding:12px 8px; min-height:56px; }
+  .hero{ padding-top:52px; }
+  .hero-copy h1{ font-size:clamp(28.8px,8.4vw,38.4px); }
+  .hero-visual{ order:-1; }
+  .hero-visual .ph-photo{ max-height:none; aspect-ratio:4/3; }
+  .hero-btns{ flex-direction:column; }
+  .hero-btns .btn{ width:100%; }
+  .stat-band{ grid-template-columns:repeat(3,1fr); gap:10px; }
+  .stat b{ font-size:26.4px; }
+  .quick-grid{ grid-template-columns:1fr!important; }
+  .quick-card{ border-right:none!important; border-bottom:1px solid var(--border)!important; }
+  .quick-card:last-child{ border-bottom:none!important; }
+  .roof-diagnostic-list,.adv-grid{ grid-template-columns:1fr!important; }
+  .roof-system-side{ grid-template-columns:1fr; }
+  .roof-compare{ grid-template-columns:1fr; }
+  .cat-grid{ grid-template-columns:1fr!important; }
+  .steps-row{ grid-template-columns:1fr!important; }
+  .area-grid{ grid-template-columns:1fr; }
+  .map-ph{ min-height:300px; }
+  .footer-grid{ grid-template-columns:1fr; gap:24px; }
+  .final-form-row{ grid-template-columns:1fr; }
+  .final-contact-form .btn{ width:100%; }
+  .final-box{ padding:24px; }
+}
+@media (max-width:640px){
+  .roof-compare{ grid-template-columns:1fr; }
+}
+
+/* MOBILE PHOTO GALLERY */
+.photo-gallery{padding:clamp(56px,8vw,100px) 0;border-top:1px solid var(--line,#ddd);}
+.photo-gallery-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px;}
+.photo-gallery-head .lead{max-width:520px;margin:0;}
+.photo-gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;}
+.photo-gallery-item{position:relative;display:block;overflow:hidden;border-radius:18px;min-height:220px;background:#eee;}
+.photo-gallery-item:nth-child(1){grid-column:span 7;grid-row:span 2;min-height:470px;}
+.photo-gallery-item:nth-child(2),.photo-gallery-item:nth-child(3){grid-column:span 5;}
+.photo-gallery-item:nth-child(n+4){grid-column:span 3;}
+.photo-gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease;}
+.photo-gallery-item:hover img{transform:scale(1.04);}
+.photo-gallery-caption{position:absolute;left:12px;right:12px;bottom:12px;padding:10px 12px;border-radius:12px;background:rgba(0,0,0,.58);color:#fff;font-size:13px;line-height:1.25;backdrop-filter:blur(8px);}
+@media (max-width:700px){
+  .photo-gallery{padding:52px 0;}
+  .photo-gallery-head{display:block;margin-bottom:18px;}
+  .photo-gallery-head .lead{margin-top:10px;font-size:15px;}
+  .photo-gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:0;}
+  .photo-gallery-item,.photo-gallery-item:nth-child(1),.photo-gallery-item:nth-child(2),.photo-gallery-item:nth-child(3),.photo-gallery-item:nth-child(n+4){width:auto;height:auto;min-height:0;max-height:none;grid-column:auto;grid-row:auto;border-radius:14px;aspect-ratio:4/5;}
+  .photo-gallery-item:nth-child(1){grid-column:span 2;aspect-ratio:16/10;}
+  .photo-gallery-item img{object-fit:cover;width:100%;height:100%;} 
+  .photo-gallery-caption{font-size:11px;bottom:7px;left:7px;right:7px;padding:7px 8px;border-radius:9px;line-height:1.2;}
+  .photo-gallery-head h2{font-size:28px;line-height:1.05;margin-bottom:8px;}
+  .photo-gallery-head .lead{font-size:14px;line-height:1.45;}
+}
+
+</style>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- HEADER -->
+<header id="siteHeader">
+<div class="wrap header-inner">
+  <a class="logo" href="index.html"><span class="mark">SR</span>СТРОЙРЕМОНТ<span>Строительство · фундамент · опалубка</span></a>
+  <nav aria-label="Основная навигация" class="main-nav">
+    <ul>
+      <li class="has-dropdown">
+        <a href="#categories">Направления <span class="caret">⌄</span></a>
+        <div aria-label="Страницы направлений" class="dropdown">
+          <a href="remont-krovlya.html">Ремонт и кровля крыш</a>
+          <a href="fundament-opalubka.html">Фундамент и опалубка</a>
+          <a href="doma.html">Дома</a>
+        </div>
+      </li>
+      <li><a href="#advantages">Преимущества</a></li>
+      <li><a href="#faq">Вопросы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="header-cta">
+    <div class="phone-block">
+      <a class="phone" href="tel:+79663892133">+7 966 389 21 33<small>с 7:00 до 23:00</small></a>
+    </div>
+    <button aria-label="Открыть меню" class="menu-trigger" id="menuTrigger"><span></span><span></span></button>
+  </div>
+</div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-top">
+    <span class="logo"><span class="mark">SR</span>СТРОЙРЕМОНТ</span>
+    <button aria-label="Закрыть меню" class="mobile-menu-close" id="menuClose">×</button>
+  </div>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="remont-krovlya.html">Фундамент и опалубка</a></li>
+    <li><a href="fundament-opalubka.html">Фундамент и опалубка</a></li>
+    <li><a href="doma.html">Дома</a></li>
+    <li><a href="#advantages">Преимущества</a></li>
+    <li><a href="#process">Процесс</a></li>
+    <li><a href="#faq">Вопросы</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <div class="mobile-menu-foot">
+    <a class="phone" href="tel:+79663892133" style="align-items:flex-start;">+7 966 389 21 33<small>с 7:00 до 23:00</small></a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="wrap">
+  <div class="hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Строительство · Дом под ключ · Москва и МО</span>
+      <h1>Строим частные дома под вашу задачу</h1>
+      <p class="lead">Строим частные дома разных типов и размеров: от компактных дачных домов до просторных домов для постоянного проживания. Берём на себя основные этапы — участок, фундамент, стены, перекрытия, кровлю, фасад и внутренние работы.</p>
+      <ul class="hero-checks">
+        <li>Каркасные, деревянные, кирпичные и блочные дома</li>
+        <li>Газобетон, керамические и бетонные блоки, кирпич и другие решения</li>
+        <li>Фундамент, коробка, перекрытия, кровля и фасад в одной системе работ</li>
+        <li>Можно заказать отдельный этап или комплексное строительство</li>
+      </ul>
+      <div class="hero-btns">
+        <a class="btn btn-accent btn-lg" href="#request">Обсудить проект <span class="arrow">→</span></a>
+        <a class="btn btn-outline btn-lg" href="tel:+79663892133">+7 966 389 21 33</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="ph ph-photo">
+        <img loading="lazy" decoding="async" alt="Строительство частного дома — СТРОЙРЕМОНТ" class="zoomimg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"/>
+        <span class="spec-tag" style="top:14px; left:14px;"><b>Строительство частных домов</b><span>Москва и Московская область</span></span>
+        <span class="badge-hot"><span class="dot"></span>Расчёт проекта</span>
+      </div>
+    </div>
+  </div>
+  <div class="stat-band reveal">
+    <div class="stat"><b class="counter" data-suffix="+" data-target="10">10+</b><span>лет опыта бригады</span></div>
+    <div class="stat"><b>89</b><span>отзывов клиентов</span></div>
+    <div class="stat"><b class="counter" data-decimal="true" data-target="4.8">4.8</b><span>оценка клиентов</span></div>
+  </div>
+</div>
+</section>
+
+<!-- БЫСТРЫЕ СЦЕНАРИИ -->
+<section class="pad-md divider">
+<div class="wrap">
+  <span class="eyebrow reveal">Какие дома строим</span>
+  <h2 class="section-title reveal" style="margin-bottom:28px;">Подбираем технологию под дом, участок и бюджет</h2>
+  <div class="quick-grid">
+    <article class="quick-card reveal">
+      <span class="quick-num">01</span>
+      <h3>Дом для постоянного проживания</h3>
+      <p>Прорабатываем фундамент, стены, перекрытия, кровлю, утепление и фасад с учётом круглогодичной эксплуатации.</p>
+    </article>
+    <article class="quick-card reveal">
+      <span class="quick-num">02</span>
+      <h3>Дачный или сезонный дом</h3>
+      <p>Можно сделать компактный дом с необходимым набором помещений и инженерных решений без лишнего объёма работ.</p>
+    </article>
+    <article class="quick-card reveal">
+      <span class="quick-num">03</span>
+      <h3>Большой семейный дом</h3>
+      <p>Рассчитываем сложные планировки, несколько этажей, террасы, балконы, гараж и другие дополнительные элементы.</p>
+    </article>
+  </div>
+</div>
+</section>
+
+<!-- ДИАГНОСТИКА -->
+<section class="pad-lg divider roof-diagnostic" id="diagnostic">
+<div class="wrap">
+  <div class="roof-diagnostic-grid">
+    <div class="roof-diagnostic-lead reveal">
+      <div>
+        <span class="eyebrow">С чего начинается строительство</span>
+        <h2>Сначала проект и участок.<br>Потом стройка.</h2>
+        <p>До начала основных работ оцениваем участок, размеры дома, рельеф, подъезд, выбранную технологию и последовательность этапов. Это помогает связать фундамент, стены, перекрытия и кровлю в одну систему.</p>
+      </div>
+      <span class="roof-diagnostic-mark">01 / Участок · проект · технология</span>
+    </div>
+    <div class="roof-diagnostic-list reveal">
+      <div class="roof-diagnostic-item"><span class="num">01</span><h3>Участок</h3><p>Учитываем рельеф, подъезд, перепады высот, размещение дома и условия для техники.</p></div>
+      <div class="roof-diagnostic-item"><span class="num">02</span><h3>Фундамент</h3><p>Подбираем конструкцию основания под выбранный дом и условия конкретного участка.</p></div>
+      <div class="roof-diagnostic-item"><span class="num">03</span><h3>Коробка дома</h3><p>Возводим стены, перегородки, перекрытия и другие основные конструктивные элементы.</p></div>
+      <div class="roof-diagnostic-item"><span class="num">04</span><h3>Кровля и фасад</h3><p>Закрываем контур здания, выполняем кровлю, утепление, фасад и необходимые наружные работы.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- СИСТЕМА ДОМА -->
+<section class="pad-lg divider roof-system" id="foundation-system">
+<div class="wrap">
+  <div class="roof-system-head">
+    <div><span class="eyebrow reveal">Что входит в строительство</span><h2 class="section-title reveal" style="margin-bottom:0;">Дом — это система из десятков этапов</h2></div>
+    <p class="lead reveal">Можно заказать полный цикл или отдельные работы. Состав этапов определяем по проекту, выбранной технологии и степени готовности объекта.</p>
+  </div>
+  <div class="roof-system-grid">
+    <div class="roof-system-main reveal">
+      <h3>Основные этапы строительства</h3>
+      <p>Связываем конструктив, наружный контур и внутренние работы, чтобы каждый следующий этап выполнялся после подготовки предыдущего.</p>
+      <div class="roof-system-points">
+        <div class="roof-system-point"><b>01 / Участок</b><span>Разметка, подготовка, земляные и подготовительные работы</span></div>
+        <div class="roof-system-point"><b>02 / Основание</b><span>Фундамент, гидроизоляция и подготовка под стены</span></div>
+        <div class="roof-system-point"><b>03 / Коробка</b><span>Стены, перегородки, перемычки, перекрытия и лестницы</span></div>
+        <div class="roof-system-point"><b>04 / Контур</b><span>Кровля, утепление, фасад, окна и наружные работы</span></div>
+      </div>
+    </div>
+    <div class="roof-system-side">
+      <div class="roof-system-card reveal"><span class="label">Под ключ</span><div><h3>Полный цикл строительства</h3><p>От подготовки участка и фундамента до коробки, кровли, фасада и внутренних работ по согласованному объёму.</p></div></div>
+      <div class="roof-system-card accent reveal"><span class="label">Поэтапно</span><div><h3>Отдельные этапы</h3><p>Можно заказать только фундамент, коробку, кровлю, фасад или другие строительные работы.</p></div></div>
+    </div>
+  </div>
+  <div class="roof-compare">
+    <div class="roof-compare-card reveal"><span class="label">Сценарий 01</span><h3>Дом с нуля</h3><ul><li>Подготовка участка</li><li>Фундамент и коробка</li><li>Кровля, фасад и наружный контур</li></ul></div>
+    <div class="roof-compare-card is-accent reveal"><span class="label">Сценарий 02</span><h3>Продолжение строительства</h3><ul><li>Есть готовый фундамент или коробка</li><li>Подключаемся к текущему этапу</li><li>Согласуем объём перед началом работ</li></ul></div>
+  </div>
+</div>
+</section>
+
+<!-- КАТЕГОРИИ УСЛУГ -->
+<section class="pad-lg divider" id="categories">
+<div class="wrap">
+  <span class="eyebrow reveal">Типы домов и технологии</span>
+  <h2 class="section-title reveal" style="margin-bottom:36px;">Строим разные частные дома</h2>
+  <div class="cat-grid reveal">
+    <a class="cat-card tilt" href="#request"><div class="ph"><img loading="lazy" decoding="async" alt="Дом из газобетона" class="zoomimg" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Дома из газобетона</h4><span class="cat-arrow">→</span></div><p>Стены из газобетонных блоков, армирование, перемычки, перекрытия и наружный контур.</p></div></a>
+    <a class="cat-card tilt" href="#request"><div class="ph"><img loading="lazy" decoding="async" alt="Кирпичный дом" class="zoomimg" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Кирпичные дома</h4><span class="cat-arrow">→</span></div><p>Кирпичная кладка, несущие стены, перегородки и комплекс наружных строительных работ.</p></div></a>
+    <a class="cat-card tilt" href="#request"><div class="ph"><img loading="lazy" decoding="async" alt="Дом из блоков" class="zoomimg" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Дома из блоков</h4><span class="cat-arrow">→</span></div><p>Керамзитобетонные, бетонные и другие стеновые блоки — по выбранной конструктивной схеме.</p></div></a>
+    <a class="cat-card tilt" href="#request"><div class="ph"><img loading="lazy" decoding="async" alt="Каркасный дом" class="zoomimg" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Каркасные дома</h4><span class="cat-arrow">→</span></div><p>Каркас, утепление, обшивка, кровля и фасадные решения для частного дома.</p></div></a>
+    <a class="cat-card tilt" href="#request"><div class="ph"><img loading="lazy" decoding="async" alt="Деревянный дом" class="zoomimg" src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1000&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Деревянные дома</h4><span class="cat-arrow">→</span></div><p>Дома из бруса и другие деревянные конструкции с утеплением, кровлей и наружной отделкой.</p></div></a>
+    <a class="cat-card tilt" href="#request"><div class="ph"><img loading="lazy" decoding="async" alt="Монолитный дом" class="zoomimg" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Монолитные дома</h4><span class="cat-arrow">→</span></div><p>Монолитные элементы, армирование, опалубка и бетонные работы по проекту.</p></div></a>
+  </div>
+</div>
+</section>
+
+<!-- ФОТО РАБОТ -->
+<section class="photo-gallery divider" id="photos">
+<div class="wrap">
+  <div class="photo-gallery-head">
+    <div><span class="eyebrow reveal">Фото работ</span><h2 class="section-title reveal" style="margin-bottom:0;">Строительство домов на разных этапах</h2></div>
+    <p class="lead reveal">На телефоне фотографии сразу доступны в сетке — можно быстро посмотреть типы домов и этапы строительства.</p>
+  </div>
+  <div class="photo-gallery-grid reveal">
+    <a class="photo-gallery-item" href="images/1.png"><img loading="lazy" alt="Строительство частного дома" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"><span class="photo-gallery-caption">Частный дом</span></a>
+    <a class="photo-gallery-item" href="images/30.webp"><img loading="lazy" alt="Коробка дома" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"><span class="photo-gallery-caption">Коробка дома</span></a>
+    <a class="photo-gallery-item" href="images/31.webp"><img loading="lazy" alt="Кладка стен" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"><span class="photo-gallery-caption">Стены</span></a>
+    <a class="photo-gallery-item" href="images/32.webp"><img loading="lazy" alt="Кровля частного дома" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85"><span class="photo-gallery-caption">Кровля</span></a>
+    <a class="photo-gallery-item" href="images/33.webp"><img loading="lazy" alt="Фасад дома" src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=85"><span class="photo-gallery-caption">Фасад</span></a>
+    <a class="photo-gallery-item" href="images/34.webp"><img loading="lazy" alt="Каркасный дом" src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1000&q=85"><span class="photo-gallery-caption">Каркасный дом</span></a>
+    <a class="photo-gallery-item" href="images/35.webp"><img loading="lazy" alt="Деревянный дом" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=85"><span class="photo-gallery-caption">Деревянный дом</span></a>
+  </div>
+</div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="pad-lg divider" id="advantages">
+<div class="wrap">
+  <span class="eyebrow reveal">Как организуем строительство</span>
+  <h2 class="section-title reveal" style="margin-bottom:36px;">Главное — связать все этапы в один результат</h2>
+  <div class="adv-grid reveal">
+    <div class="adv-item"><span class="adv-num">01</span><h3>Сначала определяем задачу</h3><p>Уточняем площадь, этажность, планировку, назначение дома, участок и желаемую степень готовности.</p></div>
+    <div class="adv-item"><span class="adv-num">02</span><h3>Согласовываем технологию</h3><p>Обсуждаем материал стен, фундамент, перекрытия, кровлю, утепление, фасад и другие ключевые решения.</p></div>
+    <div class="adv-item"><span class="adv-num">03</span><h3>Контролируем скрытые работы</h3><p>Следим за армированием, узлами, утеплением, гидроизоляцией, крепежом и другими элементами, которые потом не видны.</p></div>
+    <div class="adv-item"><span class="adv-num">04</span><h3>Работаем по этапам</h3><p>Фиксируем последовательность работ и согласованный объём, чтобы строительство было понятным на каждом шаге.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="pad-lg divider" id="process">
+<div class="wrap">
+  <span class="eyebrow reveal">Как проходит работа</span>
+  <h2 class="section-title reveal" style="margin-bottom:12px;">От участка до готового дома</h2>
+  <p class="lead reveal" style="margin-bottom:36px;">Полный цикл можно разделить на понятные этапы. Если часть работ уже выполнена, подключаемся к нужному этапу после осмотра объекта.</p>
+  <div class="steps-row reveal">
+    <div class="step"><span class="num">01</span><h3>Обсудить дом</h3><p>Уточняем площадь, этажность, планировку, технологию, участок и желаемый результат.</p></div>
+    <div class="step"><span class="num">02</span><h3>Подготовить участок</h3><p>Разметка, подготовительные и земляные работы, организация подъезда и места строительства.</p></div>
+    <div class="step"><span class="num">03</span><h3>Построить коробку</h3><p>Фундамент, стены, перекрытия, перегородки, лестницы и другие конструктивные элементы.</p></div>
+    <div class="step"><span class="num">04</span><h3>Закрыть контур</h3><p>Кровля, окна, утепление, фасад и последующие внутренние работы по согласованному объёму.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ГЕОГРАФИЯ -->
+<section class="pad-lg divider" id="area">
+<div class="wrap area-grid">
+  <div class="reveal area-info">
+    <span class="eyebrow">Москва и МО</span>
+    <h2 class="section-title" style="margin-bottom:18px;">Строительство частных домов в Москве и МО</h2>
+    <p class="lead">Работаем с частными домами, дачами, загородными объектами и участками, где требуется строительство с нуля или продолжение уже начатых работ.</p>
+    <ul class="area-list">
+      <li><strong>Москва</strong> — строительство и отдельные этапы работ</li>
+      <li><strong>Московская область</strong> — выезд на частные участки</li>
+      <li><strong>Дома с нуля</strong> — от подготовки участка и фундамента</li>
+      <li><strong>Недостроенные объекты</strong> — подключение к текущему этапу после осмотра</li>
+    </ul>
+    <div class="hero-btns"><a class="btn btn-outline" href="tel:+79663892133">Обсудить строительство</a></div>
+  </div>
+  <div class="map-ph reveal">
+    <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=35.1421%2C54.9418%2C40.2056%2C56.4813&layer=mapnik&marker=55.7558%2C37.6173" title="Москва и Московская область"></iframe>
+    <a class="map-full-link" href="https://www.openstreetmap.org/?mlat=55.7558&mlon=37.6173#map=8/55.7558/37.6173" rel="noopener" target="_blank">Открыть карту →</a>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="pad-lg divider" id="faq">
+<div class="wrap">
+  <span class="eyebrow reveal">Вопросы и ответы</span>
+  <h2 class="section-title reveal" style="margin-bottom:28px;">Что важно знать о строительстве дома</h2>
+  <div class="faq-list reveal">
+    <div class="faq-item open"><button class="faq-q" type="button"><h3>Какие частные дома вы строите?</h3><span class="plus">+</span></button><div class="faq-a"><p>Работаем с разными технологиями и материалами: каркасными, деревянными, кирпичными, блочными, газобетонными и монолитными домами. Конкретное решение зависит от проекта и задачи.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button"><h3>Можно ли заказать только коробку дома?</h3><span class="plus">+</span></button><div class="faq-a"><p>Да. Можно согласовать отдельный этап: фундамент, стены, перекрытия, кровлю, фасад или другой необходимый объём.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button"><h3>Можно ли построить дом по уже готовому проекту?</h3><span class="plus">+</span></button><div class="faq-a"><p>Да. Проект можно использовать как основу для расчёта и организации работ. Перед началом уточняем состав работ и особенности участка.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button"><h3>Можно ли начать с фундамента?</h3><span class="plus">+</span></button><div class="faq-a"><p>Да. Если дом ещё не строился, можно начать с подготовки участка и фундамента, а затем перейти к коробке, кровле и следующим этапам.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button"><h3>Строите дома в один или два этажа?</h3><span class="plus">+</span></button><div class="faq-a"><p>Рассматриваем одно- и двухэтажные частные дома, а также проекты с мансардой и дополнительными помещениями. Возможность реализации конкретного решения зависит от проекта и конструкции.</p></div></div>
+    <div class="faq-item"><button class="faq-q" type="button"><h3>Можно ли прислать план и фотографии участка?</h3><span class="plus">+</span></button><div class="faq-a"><p>Да. План, размеры и фотографии помогут предварительно понять задачу. Точный состав работ согласуем после изучения проекта и объекта.</p></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ФИНАЛЬНЫЙ CTA -->
+<section class="final-cta dark pad-lg" id="request">
+<div class="wrap final-grid">
+  <div class="reveal">
+    <span class="eyebrow">Планируете строить дом?</span>
+    <h2>Опишите дом — обсудим этапы и расчёт</h2>
+    <p class="lead" style="margin-top:18px;">Расскажите, какой дом хотите построить, где находится участок и что уже готово. Обсудим технологию, этапы и необходимый объём работ.</p>
+    <div class="final-contacts">
+      <a class="final-phone" href="tel:+79663892133">+7 966 389 21 33 — позвонить</a>
+    </div>
+  </div>
+  <div class="final-box reveal">
+    <div class="final-form-head">
+      <span class="final-form-kicker">Обсудить проект</span>
+      <h3>Расскажите о доме</h3>
+      <p>Укажите контакты и несколько слов о будущем доме — ответим и уточним детали.</p>
+    </div>
+    <form class="final-contact-form" id="houseRequestForm">
+      <div class="final-form-row">
+        <label><span>Ваше имя</span><input name="name" placeholder="Иван" required type="text"/></label>
+        <label><span>Телефон</span><input name="phone" placeholder="+7 966 389 21 33" required type="tel"/></label>
+      </div>
+      <label><span>Комментарий</span><textarea name="comment" placeholder="Например: нужен дом 150 м², 2 этажа, газобетон, участок в Московской области"></textarea></label>
+      <a class="btn btn-lg" style="background:#D8DADD!important;border-color:#D8DADD!important;color:#202124!important;" href="tel:+79663892133" onclick="event.preventDefault();document.querySelector('.final-contact-form').dispatchEvent(new Event('submit'))">Обсудить проект <span class="arrow">→</span></a>
+      <button class="btn btn-lg" type="submit" style="display:none"></button>
+      <p class="final-form-note" id="houseFormNote">Форма пока без отправки — лучше позвоните нам напрямую.</p>
+    </form>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="wrap">
+  <div class="footer-statement">Ленточный фундамент без лишних переделок.</div>
+  <div class="footer-grid">
+    <div>
+      <h4>СТРОЙРЕМОНТ</h4>
+      <p>Когда не хочется годами собирать ремонт по частям.<br/>Москва и Московская область.<br/>Работаем по договору. Гарантия до 5 лет.</p>
+      <p style="margin-top:12px;"><strong style="font-family:var(--f-mono);">Рейтинг 4.8</strong> (89 оценок)</p>
+    </div>
+    <div>
+      <h4>Услуги кровли</h4>
+      <ul>
+        <li><a href="#categories">Ленточный фундамент</a></li>
+        <li><a href="#categories">Монолитная плита</a></li>
+        <li><a href="#categories">Опалубка</a></li>
+        <li><a href="#categories">Армирование</a></li>
+        <li><a href="#categories">Армирование и узлы</a></li>
+        <li><a href="#categories">Подготовка участка</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <ul>
+        <li><a href="tel:+79663892133">+7 966 389 21 33 — позвонить</a></li>
+        <li>Режим работы: 7:00–23:00</li>
+        <li>Москва и Московская область</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#diagnostic">Диагностика</a></li>
+        <li><a href="#process">Процесс</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-policies">
+    <h4 style="text-transform:uppercase; font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; margin-bottom:14px;">Правовая информация</h4>
+    <div class="policy-links">
+      <button data-modal="policy-consent" type="button">Согласие на обработку персональных данных</button>
+      <button data-modal="policy-privacy" type="button">Политика конфиденциальности</button>
+      <button data-modal="policy-offer" type="button">Условия сотрудничества (публичная оферта)</button>
+      <button data-modal="policy-guarantee" type="button">Гарантийные обязательства</button>
+    </div>
+    <div class="footer-bottom">
+      <span>© СТРОЙРЕМОНТ, 2026. Все цены ориентировочные, точная стоимость — после бесплатного замера.</span>
+      <span>Сайт не является публичной офертой.</span>
+    </div>
+  </div>
+</div>
+</footer>
+
+<button aria-label="Наверх" class="back-to-top" id="backToTop" type="button">↑</button>
+
+<!-- МОДАЛЬНЫЕ ОКНА -->
+<div class="modal-overlay" id="modal-policy-consent">
+<div class="modal-box"><button class="modal-close" data-close-modal="">×</button>
+<h3>Согласие на обработку персональных данных</h3>
+<p>Настоящее согласие регулирует обработку персональных данных, которые пользователь добровольно сообщает при использовании форм обратной связи, калькулятора, консультации или иных сервисов сайта.</p>
+<p>К персональным данным могут относиться имя, номер телефона и иные сведения, которые пользователь самостоятельно указывает в сообщении.</p>
+<p>Цель обработки — ответить на обращение, уточнить содержание работ, обсудить сроки и порядок взаимодействия, согласовать выезд на объект.</p>
+<p>Согласие действует в течение периода, необходимого для достижения заявленных целей обработки. Пользователь вправе отозвать согласие, направив соответствующее обращение способом, доступным на сайте.</p>
+</div></div>
+<div class="modal-overlay" id="modal-policy-privacy">
+<div class="modal-box"><button class="modal-close" data-close-modal="">×</button>
+<h3>Политика конфиденциальности</h3>
+<p>Настоящая политика определяет общие принципы обработки и защиты информации, которую пользователь предоставляет при посещении сайта и взаимодействии с его сервисами.</p>
+<p>Персональные данные используются для обработки обращений, подготовки предварительных расчётов и согласования организационных вопросов.</p>
+<p>Для защиты информации применяются организационные и технические меры, включая ограничение доступа и контроль используемых систем.</p>
+<p>Сайт может использовать cookie для сохранения настроек и получения обезличенной статистики. Пользователь может ограничить их использование в настройках браузера.</p>
+</div></div>
+<div class="modal-overlay" id="modal-policy-offer">
+<div class="modal-box"><button class="modal-close" data-close-modal="">×</button>
+<h3>Условия сотрудничества (публичная оферта)</h3>
+<p>Настоящие условия описывают общий порядок взаимодействия с пользователем, заинтересованным в выполнении строительных, ремонтных и отделочных работ, представленных на сайте.</p>
+<p>Стоимость зависит от площади, объёма, сложности, доступности объекта и других обстоятельств и определяется после уточнения параметров конкретной работы.</p>
+<p>Если стороны заключают договор подряда, именно договор является основным документом, определяющим обязательства сторон.</p>
+</div></div>
+<div class="modal-overlay" id="modal-policy-guarantee">
+<div class="modal-box"><button class="modal-close" data-close-modal="">×</button>
+<h3>Гарантийные обязательства</h3>
+<p>Гарантийные обязательства распространяются на результат работ, для которых гарантия предусмотрена согласованными сторонами условиями, в пределах до 5 лет.</p>
+<p>Гарантия не распространяется на повреждения из-за неправильной эксплуатации, отсутствия обслуживания или действий третьих лиц.</p>
+<p>Устранение гарантийного случая производится в согласованный сторонами разумный срок с учётом характера работ и технологических условий.</p>
+</div></div>
+
+<!-- COOKIE БАННЕР -->
+<div class="cookie-banner" id="cookieBanner">
+<div class="wrap cookie-inner">
+  <p>Мы используем файлы cookie для корректной работы сайта и аналитики посещаемости.</p>
+  <button class="btn" id="cookieAccept" type="button">Понятно</button>
+</div>
+</div>
+
+<script>
+  // Header solid on scroll
+  var header = document.getElementById('siteHeader');
+  function updateHeader(){ if(window.scrollY > 40){ header.classList.add('solid'); } else { header.classList.remove('solid'); } }
+  window.addEventListener('scroll', updateHeader, {passive:true});
+  updateHeader();
+
+  // Mobile menu
+  var menuTrigger = document.getElementById('menuTrigger');
+  var menuClose = document.getElementById('menuClose');
+  var mobileMenu = document.getElementById('mobileMenu');
+  menuTrigger.addEventListener('click', function(){ mobileMenu.classList.add('open'); document.body.style.overflow='hidden'; });
+  menuClose.addEventListener('click', function(){ mobileMenu.classList.remove('open'); document.body.style.overflow=''; });
+  mobileMenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mobileMenu.classList.remove('open'); document.body.style.overflow=''; }); });
+
+  // Reveal on scroll
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); } }); }, {threshold:0.1});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else { revealEls.forEach(function(el){ el.classList.add('in'); }); }
+
+  // Counter animation
+  (function(){
+    var counters = document.querySelectorAll('.counter');
+    if(!counters.length) return;
+    function animateCounter(el){
+      var target = parseFloat(el.getAttribute('data-target')) || 0;
+      var isDecimal = el.getAttribute('data-decimal') === 'true';
+      var suffix = el.getAttribute('data-suffix') || '';
+      var duration = 1100; var start = null;
+      function step(ts){ if(!start) start = ts; var progress = Math.min((ts-start)/duration,1); var eased = 1-Math.pow(1-progress,3); var current = target*eased; el.textContent=(isDecimal?current.toFixed(1):Math.round(current))+suffix; if(progress<1){ requestAnimationFrame(step); } }
+      requestAnimationFrame(step);
+    }
+    if('IntersectionObserver' in window){
+      var cio = new IntersectionObserver(function(entries){ entries.forEach(function(entry){ if(entry.isIntersecting){ animateCounter(entry.target); cio.unobserve(entry.target); } }); }, {threshold:0.6});
+      counters.forEach(function(el){ cio.observe(el); });
+    } else { counters.forEach(function(el){ animateCounter(el); }); }
+  })();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+      if(!isOpen){ item.classList.add('open'); }
+    });
+  });
+
+  // Modal system
+  document.querySelectorAll('[data-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-modal');
+      var modal = document.getElementById('modal-' + id);
+      if(modal){ modal.classList.add('open'); document.body.style.overflow='hidden'; }
+    });
+  });
+  document.querySelectorAll('[data-close-modal],.modal-overlay').forEach(function(el){
+    el.addEventListener('click', function(e){
+      if(e.target === el || el.getAttribute('data-close-modal') !== null){
+        var overlay = el.closest ? el.closest('.modal-overlay') : el;
+        if(!overlay && el.classList.contains('modal-overlay')) overlay = el;
+        if(overlay){ overlay.classList.remove('open'); document.body.style.overflow=''; }
+        else { document.querySelectorAll('.modal-overlay.open').forEach(function(m){ m.classList.remove('open'); }); document.body.style.overflow=''; }
+      }
+    });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ document.querySelectorAll('.modal-overlay.open').forEach(function(m){ m.classList.remove('open'); }); document.body.style.overflow=''; } });
+
+  // Scroll progress
+  (function(){
+    var bar = document.getElementById('scrollProgress');
+    if(!bar) return;
+    function update(){ var h=document.documentElement; var scrolled=h.scrollTop; var max=h.scrollHeight-h.clientHeight; bar.style.width=(max>0?(scrolled/max)*100:0)+'%'; }
+    window.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  // Back to top
+  (function(){
+    var btn = document.getElementById('backToTop');
+    if(!btn) return;
+    window.addEventListener('scroll', function(){ if(window.scrollY>700){ btn.classList.add('show'); } else { btn.classList.remove('show'); } }, {passive:true});
+    btn.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  })();
+
+  // Tilt + spotlight
+  (function(){
+    if(window.matchMedia && window.matchMedia('(hover: none)').matches) return;
+    var cards = document.querySelectorAll('.tilt');
+    cards.forEach(function(card){
+      card.addEventListener('mousemove', function(e){
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX-rect.left, y = e.clientY-rect.top;
+        card.style.setProperty('--mx', x+'px');
+        card.style.setProperty('--my', y+'px');
+        var rx = ((y/rect.height)-.5)*-5;
+        var ry = ((x/rect.width)-.5)*5;
+        card.style.transform = 'perspective(700px) rotateX('+rx+'deg) rotateY('+ry+'deg) translateY(-3px)';
+      });
+      card.addEventListener('mouseleave', function(){ card.style.transform=''; });
+    });
+  })();
+
+  // Ripple on buttons
+  (function(){
+    document.querySelectorAll('.btn').forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        var rect = btn.getBoundingClientRect();
+        var ripple = document.createElement('span');
+        var size = Math.max(rect.width, rect.height);
+        ripple.className = 'ripple';
+        ripple.style.width = ripple.style.height = size+'px';
+        ripple.style.left = (e.clientX-rect.left-size/2)+'px';
+        ripple.style.top = (e.clientY-rect.top-size/2)+'px';
+        btn.appendChild(ripple);
+        setTimeout(function(){ ripple.remove(); }, 650);
+      });
+    });
+  })();
+
+  // Cookie banner
+  (function(){
+    var STORAGE_KEY = 'sg_visit_count';
+    var count = parseInt(localStorage.getItem(STORAGE_KEY)||'0',10)+1;
+    localStorage.setItem(STORAGE_KEY, String(count));
+    var banner = document.getElementById('cookieBanner');
+    if(count%5===0){ banner.classList.add('show'); }
+    document.getElementById('cookieAccept').addEventListener('click', function(){ banner.classList.remove('show'); });
+  })();
+
+  // Form
+  var roofForm = document.getElementById('roofRequestForm');
+  if(roofForm){
+    roofForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var note = document.getElementById('roofFormNote');
+      if(note){ note.textContent='Заявка заполнена. Позвоните нам: '+(window.SITE_PHONE?window.SITE_PHONE.DISPLAY:'+7 966 389 21 33'); }
+    });
+  }
+</script>
+</body>
+</html>
