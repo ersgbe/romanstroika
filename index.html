@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>СТРОЙРЕМОНТ — ремонт крыш, ремонт, строительство и ремонт домов</title>
+<title>СТРОЙРЕМОНТ-МСК — ремонт крыш, ремонт, строительство и ремонт домов</title>
 <meta content="Ремонт протечек и кровли, когда нельзя больше откладывать, строительство и ремонт домов, веранд и хозблоков, фундаменты, опалубка, фасады, обшивка, заборы, ворота, плитка и отделочные работы." name="description"/>
 <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F1724'/%3E%3Crect x='5' y='5' width='54' height='54' fill='none' stroke='%23FFFFFF' stroke-width='2'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='600' fill='%23FFFFFF'%3ESR%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -538,6 +538,9 @@ footer{padding:var(--s-8) 0 var(--s-6); font-size:15.6px; color:var(--stone); ba
 .svc-grid .svc-card{min-width:0;}
 @media (max-width: 980px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media (max-width: 620px){.svc-grid{grid-template-columns:1fr;}}
+
+#quiz .btn,#quiz .btn:hover,#quiz .btn:focus-visible{color:#fff!important;}
+#quiz .quiz-opt{color:#202124!important;}
 </style>
 <style id="strict-monochrome-theme">
 /* Строгая монохромная палитра: чёрный, белый, графит */
@@ -773,6 +776,32 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 }
 </style>
 
+
+<style id="calculator-white-button-text">
+#quiz .btn,
+#quiz .btn:hover,
+#quiz .btn:focus,
+#quiz .btn:focus-visible,
+#quiz .btn:active,
+#quiz .btn:disabled {
+  color:#fff !important;
+  -webkit-text-fill-color:#fff !important;
+}
+#quiz .btn .arrow {
+  color:#fff !important;
+}
+</style>
+
+<style id="compact-calculator-grid">
+@media (min-width: 760px){
+  #quiz .quiz-options,
+  #quiz .options,
+  #quiz .choices{
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -781,7 +810,7 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
      ============================================================ -->
 <header id="siteHeader">
 <div class="wrap header-inner">
-<a class="logo" href="#top"><span class="mark">SR</span>СТРОЙРЕМОНТ<span>Строительство · ремонт · кровля</span></a>
+<a class="logo" href="#top"><span class="mark">SR</span>СТРОЙРЕМОНТ-МСК<span>Строительство · ремонт · кровля</span></a>
 <nav aria-label="Основная навигация" class="main-nav">
 <ul>
 <li class="has-dropdown">
@@ -809,7 +838,7 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 </header>
 <div class="mobile-menu" id="mobileMenu">
 <div class="mobile-menu-top">
-<span class="logo"><span class="mark">SR</span>СТРОЙРЕМОНТ</span>
+<span class="logo"><span class="mark">SR</span>СТРОЙРЕМОНТ-МСК</span>
 <button aria-label="Закрыть меню" class="mobile-menu-close" id="menuClose">×</button>
 </div>
 <ul>
@@ -853,8 +882,8 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 </div>
 <div class="hero-visual reveal">
 <div class="ph ph-photo">
-<!-- images/1.png — главное фото первого экрана: бригада на объекте / кровельные работы крупным планом -->
-<img alt="Бригада СТРОЙРЕМОНТ на объекте" class="zoomimg" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85"/>
+<!-- images/1.webp — главное фото первого экрана: бригада на объекте / кровельные работы крупным планом -->
+<img alt="Бригада СТРОЙРЕМОНТ-МСК на объекте" class="zoomimg" src="images/1.webp"/>
 <span class="spec-tag" style="top:14px; left:14px;"><b>Объект</b><span>Москва и Московская область</span></span>
 <span class="badge-hot"><span class="dot"></span>2. Осматриваем объект бесплатно</span>
 </div>
@@ -874,7 +903,7 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <div class="wrap">
 <div class="quick-grid reveal">
 <div class="quick-item"><span class="qi-ico">01</span><h4>Сначала разбираемся в проблеме</h4><p>Не маскируем последствия. Осматриваем объект, ищем причину трещин, сырости, разрушения или других проблем и объясняем, что действительно нужно делать, а за что платить не стоит.</p></div>
-<div class="quick-item"><span class="qi-ico">02</span><h4>Понятная смета до начала работ</h4><p>Вы заранее понимаете объём работ и бюджет. Без ситуации «начали с одной суммы, а в процессе внезапно стало в два раза дороже» — согласованные условия фиксируются до старта.</p></div>
+<div class="quick-item"><span class="qi-ico">02</span><h4>Понятный план работ</h4><p>До начала работ обсуждаем задачу, последовательность действий и важные детали. Вы понимаете, что и в каком порядке будем делать.</p></div>
 <div class="quick-item"><span class="qi-ico">03</span><h4>Понятные условия вместо обещаний «всё будет хорошо»</h4><p>Одна из самых частых проблем — бригада начинает, а потом пропадает. Мы заранее согласовываем этапы и доводим оговорённый объём до результата.</p></div>
 <div class="quick-item"><span class="qi-ico">04</span><h4>Один ответственный за весь результат</h4><p>Вам не приходится координировать несколько мастеров между собой. Если нужно одновременно решить вопросы с фундаментом, фасадом, отделкой или участком — собираем работы в один понятный процесс.</p></div>
 </div>
@@ -890,56 +919,43 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <div class="quiz-intro">
 <span class="eyebrow">Калькулятор стоимости</span>
 <h2>Опишите задачу — учтём даже нестандартный случай</h2>
-<p>Ответьте на несколько простых вопросов. Разберём вашу ситуацию, подскажем возможные варианты и подготовим ориентир по работам. Точную стоимость определим после осмотра объекта.</p>
+<p>Сначала выберите направление работ, затем уточните детали и срочность. После этого можно оставить контакты — мы разберём задачу и подготовим ориентир.</p>
 </div>
 <div class="quiz-body">
-<div class="quiz-progress-label"><span id="quizStepLabel">Вопрос 1 из 5</span><span id="quizPercentLabel">20%</span></div>
+<div class="quiz-progress-label"><span id="quizStepLabel">Вопрос 1 из 4</span><span id="quizPercentLabel">25%</span></div>
 <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+
 <!-- ШАГ 1 -->
 <div class="quiz-step active" data-step="1">
-<p class="quiz-question">Что нужно сделать? Можно выбрать несколько вариантов</p>
-<div class="quiz-options" data-multi="true"><button class="quiz-opt" data-value="Заборы под ключ"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy"></span>Заборы под ключ</button><button class="quiz-opt" data-value="Строительство фундаментов"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Строительство фундаментов</button><button class="quiz-opt" data-value="Автоматические ворота"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Автоматические ворота</button><button class="quiz-opt" data-value="Строительство веранд и террас"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Строительство веранд и террас</button><button class="quiz-opt" data-value="Навесы для автомобилей"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1562259949-e8e7682d7828?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Навесы для автомобилей</button><button class="quiz-opt" data-value="Укладка тротуарной плитки"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Укладка тротуарной плитки</button><button class="quiz-opt" data-value="Обшивка и утепление фасадов"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Обшивка и утепление фасадов</button><button class="quiz-opt" data-value="Современные хозблоки"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Современные хозблоки</button><button class="quiz-opt" data-value="Каркасные дома и бани"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Каркасные дома и бани</button><button class="quiz-opt" data-value="Общий ремонт и реконструкция"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Общий ремонт и реконструкция</button></div>
-<textarea class="quiz-comment" data-comment-step="1" placeholder="Не нашли нужный вариант? Напишите, что именно нужно сделать или что вас беспокоит…"></textarea><div class="quiz-nav"><span></span><button class="btn btn-accent" disabled="" id="quizNext1" type="button">Далее <span class="arrow">→</span></button></div>
+<p class="quiz-question">Что нужно сделать?</p>
+<div class="quiz-options"><button class="quiz-opt" data-value="Заборы под ключ"><span class="qo-photo qo-placeholder"><img src="images/25.webp" alt="" loading="lazy"></span>Заборы под ключ</button><button class="quiz-opt" data-value="Строительство фундаментов"><span class="qo-photo qo-placeholder"><img src="images/31.webp" alt="" loading="lazy"></span>Фундамент</button><button class="quiz-opt" data-value="Автоматические ворота"><span class="qo-photo qo-placeholder"><img src="images/34.webp" alt="" loading="lazy"></span>Ворота</button><button class="quiz-opt" data-value="Строительство веранд и террас"><span class="qo-photo qo-placeholder"><img src="images/35.webp" alt="" loading="lazy"></span>Веранды и террасы</button><button class="quiz-opt" data-value="Навесы для автомобилей"><span class="qo-photo qo-placeholder"><img src="images/36.webp" alt="" loading="lazy"></span>Навесы для автомобилей</button><button class="quiz-opt" data-value="Укладка тротуарной плитки"><span class="qo-photo qo-placeholder"><img src="images/2.webp" alt="" loading="lazy"></span>Укладка тротуарной плитки</button><button class="quiz-opt" data-value="Обшивка и утепление фасадов"><span class="qo-photo qo-placeholder"><img src="images/19.webp" alt="" loading="lazy"></span>Обшивка и утепление фасадов</button><button class="quiz-opt" data-value="Современные хозблоки"><span class="qo-photo qo-placeholder"><img src="images/25.webp" alt="" loading="lazy"></span>Хозблоки</button><button class="quiz-opt" data-value="Дома"><span class="qo-photo qo-placeholder"><img src="images/32.webp" alt="" loading="lazy"></span>Дома</button><button class="quiz-opt" data-value="Бани"><span class="qo-photo qo-placeholder"><img src="images/32.webp" alt="" loading="lazy"></span>Бани</button><button class="quiz-opt" data-value="Кровельные работы и ремонт крыш"><span class="qo-photo qo-placeholder"><img src="images/32.webp" alt="" loading="lazy"></span>Кровельные работы и ремонт крыш</button><button class="quiz-opt" data-value="Крыльца и входные группы"><span class="qo-photo qo-placeholder"><img src="images/28.webp" alt="" loading="lazy"></span>Крыльца и входные группы</button><button class="quiz-opt" data-value="Отмостка и водоотведение"><span class="qo-photo qo-placeholder"><img src="images/27.webp" alt="" loading="lazy"></span>Отмостка и водоотвод</button></div>
+<textarea class="quiz-comment" data-comment-step="1" placeholder="Не нашли нужный вариант? Напишите, что именно нужно сделать или что вас беспокоит…"></textarea>
+<div class="quiz-nav"><span></span><button class="btn btn-accent" disabled id="quizNext1" type="button">Далее <span class="arrow">→</span></button></div>
 </div>
+
 <!-- ШАГ 2 -->
 <div class="quiz-step" data-step="2">
-<p class="quiz-question">Какой примерно объём работ?</p>
-<div class="quiz-options cols-2" data-autoadvance="true" data-multi="false">
-<button class="quiz-opt" data-value="до 50 м²"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>до 50 м²</button>
-<button class="quiz-opt" data-value="50–100 м²"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>50–100 м²</button>
-<button class="quiz-opt" data-value="100–150 м²"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>100–150 м²</button>
-<button class="quiz-opt" data-value="150–250 м²"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>150–250 м²</button>
-<button class="quiz-opt" data-value="более 250 м²"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1562259949-e8e7682d7828?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>более 250 м²</button>
-<button class="quiz-opt" data-value="Затрудняюсь ответить"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Затрудняюсь ответить</button>
+<p class="quiz-question" id="quizDetailQuestion">Уточните детали</p>
+<div class="quiz-options cols-2" id="quizDetailOptions"></div>
+<textarea class="quiz-comment" data-comment-step="2" placeholder="Есть дополнительные детали? Напишите их здесь…"></textarea>
+<div class="quiz-nav"><button class="quiz-back" data-back="1" type="button">← Назад</button><button class="btn btn-accent" disabled id="quizNext2" type="button">Далее <span class="arrow">→</span></button></div>
 </div>
-<textarea class="quiz-comment" data-comment-step="2" placeholder="Не нашли нужный вариант? Напишите, что именно нужно сделать или что вас беспокоит…"></textarea><div class="quiz-nav"><button class="quiz-back" data-back="1" type="button">← Назад</button><span></span></div>
-</div>
+
 <!-- ШАГ 3 -->
 <div class="quiz-step" data-step="3">
-<p class="quiz-question">Из чего построен объект?</p>
-<div class="quiz-options cols-2" data-autoadvance="true" data-multi="false">
-<button class="quiz-opt" data-value="Газобетон"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Газобетон</button>
-<button class="quiz-opt" data-value="Кирпич / керамоблок"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Кирпич / керамоблок</button>
-<button class="quiz-opt" data-value="Брус / дерево"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Брус / дерево</button>
-<button class="quiz-opt" data-value="Металлоконструкции"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Металлоконструкции</button>
-<button class="quiz-opt" data-value="Ещё не решил(а)"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Ещё не решил(а)</button>
-<button class="quiz-opt" data-value="Другое"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Другое</button>
-</div>
-<textarea class="quiz-comment" data-comment-step="3" placeholder="Не нашли нужный вариант? Напишите, что именно нужно сделать или что вас беспокоит…"></textarea><div class="quiz-nav"><button class="quiz-back" data-back="2" type="button">← Назад</button><span></span></div>
-</div>
-<!-- ШАГ 4 -->
-<div class="quiz-step" data-step="4">
 <p class="quiz-question">Насколько срочно нужно решить вопрос?</p>
-<div class="quiz-options cols-2" data-autoadvance="true" data-multi="false">
-<button class="quiz-opt" data-value="Проблема уже сейчас"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Проблема уже сейчас</button>
-<button class="quiz-opt" data-value="В ближайший месяц"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>В ближайший месяц</button>
-<button class="quiz-opt" data-value="В течение года"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1562259949-e8e7682d7828?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>В течение года</button>
-<button class="quiz-opt" data-value="Пока планирую"><span class="qo-photo qo-placeholder"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85" alt="" loading="lazy"></span>Пока планирую</button>
+<div class="quiz-options cols-2">
+<button class="quiz-opt" data-value="Проблема уже сейчас"><span class="qo-photo qo-placeholder"><img src="images/34.webp" alt="" loading="lazy"></span>Проблема уже сейчас</button>
+<button class="quiz-opt" data-value="В ближайший месяц"><span class="qo-photo qo-placeholder"><img src="images/35.webp" alt="" loading="lazy"></span>В ближайший месяц</button>
+<button class="quiz-opt" data-value="В течение года"><span class="qo-photo qo-placeholder"><img src="images/36.webp" alt="" loading="lazy"></span>В течение года</button>
+<button class="quiz-opt" data-value="Пока планирую"><span class="qo-photo qo-placeholder"><img src="images/37.webp" alt="" loading="lazy"></span>Пока планирую</button>
 </div>
-<textarea class="quiz-comment" data-comment-step="4" placeholder="Не нашли нужный вариант? Напишите, что именно нужно сделать или что вас беспокоит…"></textarea><div class="quiz-nav"><button class="quiz-back" data-back="3" type="button">← Назад</button><span></span></div>
+<textarea class="quiz-comment" data-comment-step="3" placeholder="Если есть важные сроки или обстоятельства, напишите их…"></textarea>
+<div class="quiz-nav"><button class="quiz-back" data-back="2" type="button">← Назад</button><button class="btn btn-accent" disabled id="quizNext3" type="button">Далее <span class="arrow">→</span></button></div>
 </div>
-<!-- ШАГ 5 — СВЯЗЬ -->
-<div class="quiz-step" data-step="5">
+
+<!-- ШАГ 4 — СВЯЗЬ -->
+<div class="quiz-step" data-step="4">
 <p class="quiz-question">Почти готово — разберём вашу ситуацию</p>
 <div class="quiz-summary" id="quizSummary" role="button" tabindex="0">
 <div class="quiz-summary-label"><span>Ваш выбор</span><span class="quiz-summary-copy-hint" id="quizSummaryCopyHint">Нажмите, чтобы скопировать</span></div>
@@ -947,9 +963,7 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 </div>
 <p class="lead" style="margin-bottom:26px;">Мы учли ваши ответы. Свяжитесь с нами — уточним детали, скажем, какие работы действительно нужны, и договоримся о следующем шаге.</p>
 <form class="quiz-contact-form" id="quizContactForm"><input autocomplete="name" name="name" placeholder="Ваше имя" required="required" type="text"/><input autocomplete="tel" name="phone" placeholder="Ваш телефон" required="required" type="tel"/><input autocomplete="address-level2" name="city" placeholder="Город / район" type="text"/><textarea name="contactComment" placeholder="Что важно учесть?" rows="3"></textarea><button class="btn btn-lg btn-accent" type="submit">Получить расчёт</button><p class="form-note">Форма пока никуда не отправляет — данные останутся на странице.</p></form>
-<div class="quiz-nav" style="justify-content:flex-start;">
-<button class="quiz-back" data-back="4" type="button">← Назад</button>
-</div>
+<div class="quiz-nav" style="justify-content:flex-start;"><button class="quiz-back" data-back="3" type="button">← Назад</button></div>
 </div>
 </div>
 </div>
@@ -963,7 +977,7 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <div class="wrap">
 <span class="eyebrow reveal">Направления работ</span>
 <h2 class="section-title reveal" style="margin-bottom:36px;">Работы для дома и участка</h2>
-<div class="cat-grid reveal"><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Заборы под ключ" class="zoomimg" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Заборы под ключ</h4><span class="cat-arrow">→</span></div><p>Монтаж основания, опор, полотна, калитки и ворот — без необходимости искать несколько подрядчиков.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство фундаментов" class="zoomimg" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство фундаментов</h4><span class="cat-arrow">→</span></div><p>Основание под дом, пристройку, баню или другое строение с учётом особенностей участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Автоматические ворота" class="zoomimg" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Автоматические ворота</h4><span class="cat-arrow">→</span></div><p>Распашные и откатные ворота с автоматикой — удобно открывать и закрывать без выхода из машины.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство веранд и террас" class="zoomimg" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство веранд и террас</h4><span class="cat-arrow">→</span></div><p>Тёплые и открытые веранды, террасы и пристройки под задачи вашего дома и участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Навесы для автомобилей" class="zoomimg" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Навесы для автомобилей</h4><span class="cat-arrow">→</span></div><p>Навесы для автомобиля от подготовки основания до монтажа конструкции и покрытия.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Укладка тротуарной плитки" class="zoomimg" src="https://images.unsplash.com/photo-1562259949-e8e7682d7828?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Укладка тротуарной плитки</h4><span class="cat-arrow">→</span></div><p>Подготовка основания и укладка плитки для дорожек, площадок, двора и парковки.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Обшивка и утепление фасадов" class="zoomimg" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Обшивка и утепление фасадов</h4><span class="cat-arrow">→</span></div><p>Утепление, обшивка и обновление фасада, чтобы дом был теплее и выглядел аккуратно.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Современные хозблоки" class="zoomimg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Современные хозблоки</h4><span class="cat-arrow">→</span></div><p>Хозблоки для хранения, мастерской, инвентаря и других задач — с продуманной планировкой.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство каркасных домов и бань" class="zoomimg" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство каркасных домов и бань</h4><span class="cat-arrow">→</span></div><p>Каркасные дома и бани с возведением конструкции, утеплением и подготовкой под дальнейшую отделку.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Кровельные работы и ремонт крыш" class="zoomimg" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Кровельные работы и ремонт крыш</h4><span class="cat-arrow">→</span></div><p>Монтаж, ремонт и восстановление кровли — от локальных проблем до комплексных работ.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Крыльца и входные группы" class="zoomimg" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Крыльца и входные группы</h4><span class="cat-arrow">→</span></div><p>Устройство крылец, ступеней и входных площадок с учётом конструкции дома и условий участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Отмостка и водоотведение" class="zoomimg" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"/></div><div class="cat-label"><div class="cat-label-top"><h4>Отмостка и водоотведение</h4><span class="cat-arrow">→</span></div><p>Устройство отмостки и организация отвода дождевой воды для защиты основания здания.</p></div></a></div>
+<div class="cat-grid reveal"><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Заборы под ключ" class="zoomimg" src="images/28.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Заборы под ключ</h4><span class="cat-arrow">→</span></div><p>Монтаж основания, опор, полотна, калитки и ворот — без необходимости искать несколько подрядчиков.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство фундаментов" class="zoomimg" src="images/27.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство фундаментов</h4><span class="cat-arrow">→</span></div><p>Основание под дом, пристройку, баню или другое строение с учётом особенностей участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Автоматические ворота" class="zoomimg" src="images/31.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Автоматические ворота</h4><span class="cat-arrow">→</span></div><p>Распашные и откатные ворота с автоматикой — удобно открывать и закрывать без выхода из машины.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство веранд и террас" class="zoomimg" src="images/34.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство веранд и террас</h4><span class="cat-arrow">→</span></div><p>Тёплые и открытые веранды, террасы и пристройки под задачи вашего дома и участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Навесы для автомобилей" class="zoomimg" src="images/35.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Навесы для автомобилей</h4><span class="cat-arrow">→</span></div><p>Навесы для автомобиля от подготовки основания до монтажа конструкции и покрытия.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Укладка тротуарной плитки" class="zoomimg" src="images/36.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Укладка тротуарной плитки</h4><span class="cat-arrow">→</span></div><p>Подготовка основания и укладка плитки для дорожек, площадок, двора и парковки.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Обшивка и утепление фасадов" class="zoomimg" src="images/37.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Обшивка и утепление фасадов</h4><span class="cat-arrow">→</span></div><p>Утепление, обшивка и обновление фасада, чтобы дом был теплее и выглядел аккуратно.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Современные хозблоки" class="zoomimg" src="images/19.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Современные хозблоки</h4><span class="cat-arrow">→</span></div><p>Хозблоки для хранения, мастерской, инвентаря и других задач — с продуманной планировкой.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Строительство каркасных домов и бань" class="zoomimg" src="images/25.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Строительство каркасных домов и бань</h4><span class="cat-arrow">→</span></div><p>Каркасные дома и бани с возведением конструкции, утеплением и подготовкой под дальнейшую отделку.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Кровельные работы и ремонт крыш" class="zoomimg" src="images/32.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Кровельные работы и ремонт крыш</h4><span class="cat-arrow">→</span></div><p>Монтаж, ремонт и восстановление кровли — от локальных проблем до комплексных работ.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Крыльца и входные группы" class="zoomimg" src="images/28.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Крыльца и входные группы</h4><span class="cat-arrow">→</span></div><p>Устройство крылец, ступеней и входных площадок с учётом конструкции дома и условий участка.</p></div></a><a class="cat-card tilt" href="#quiz"><div class="ph"><img alt="Отмостка и водоотведение" class="zoomimg" src="images/27.webp"/></div><div class="cat-label"><div class="cat-label-top"><h4>Отмостка и водоотведение</h4><span class="cat-arrow">→</span></div><p>Устройство отмостки и организация отвода дождевой воды для защиты основания здания.</p></div></a></div>
 </div>
 </section>
 <!-- ============================================================
@@ -999,13 +1013,124 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
      8. БЛОК С ВИЗУАЛЬНЫМИ ДОКАЗАТЕЛЬСТВАМИ (видео + отзывы)
      ============================================================ -->
 <section class="pad-lg divider" id="proof">
-<div class="wrap">
-<span class="eyebrow reveal">Отзывы и видео работ</span>
-<h2 class="section-title reveal" style="margin-bottom:16px;">Посмотрите, как проходит работа на объекте</h2>
-<p class="lead reveal" style="margin-bottom:36px;">Показываем не только красивые финальные фото, но и то, что обычно остаётся за кадром: демонтаж, подготовку основания, монтаж, утепление и другие рабочие этапы.</p>
-<div class="video-grid reveal"><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/5264794/5264794-hd_1280_720_30fps.mp4" type="video/mp4"></video><p>Строительство и монтаж кровли</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/4198815/4198815-uhd_3840_2160_24fps.mp4" type="video/mp4"></video><p>Работы на крыше дома</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/16393893/16393893-uhd_2560_1440_30fps.mp4" type="video/mp4"></video><p>Работа бригады на объекте</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/34572303/14649311_3840_2160_30fps.mp4" type="video/mp4"></video><p>Монтаж элементов кровли</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/31025083/13261714_3840_2160_24fps.mp4" type="video/mp4"></video><p>Строительство жилого дома</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/5264794/5264794-hd_1280_720_30fps.mp4" type="video/mp4"></video><p>Строительство и монтаж кровли</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1562259949-e8e7682d7828?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/4198815/4198815-uhd_3840_2160_24fps.mp4" type="video/mp4"></video><p>Работы на крыше дома</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/16393893/16393893-uhd_2560_1440_30fps.mp4" type="video/mp4"></video><p>Работа бригады на объекте</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/34572303/14649311_3840_2160_30fps.mp4" type="video/mp4"></video><p>Монтаж элементов кровли</p></div><div class="stock-video-card"><video class="stock-video" controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85"><source src="https://videos.pexels.com/video-files/31025083/13261714_3840_2160_24fps.mp4" type="video/mp4"></video><p>Строительство жилого дома</p></div></div>
-</div>
+  <div class="wrap">
+
+    <span class="eyebrow reveal">Отзывы и видео работ</span>
+
+    <h2 class="section-title reveal" style="margin-bottom:16px;">
+      Посмотрите, как проходит работа на объекте
+    </h2>
+
+    <p class="lead reveal" style="margin-bottom:36px;">
+      Показываем не только красивые финальные фото, но и то, что обычно остаётся за кадром:
+      демонтаж, подготовку основания, монтаж, утепление и другие рабочие этапы.
+    </p>
+
+    <div class="video-grid reveal">
+
+      <!-- Видео 1 -->
+      <div class="stock-video-card">
+        <video class="stock-video" controls playsinline preload="metadata" poster="images/32.webp">
+          <source src="videos/5.mp4" type="video/mp4">
+        </video>
+        <p>Строительство и монтаж кровли</p>
+      </div>
+
+      <!-- Видео 2 -->
+      <div class="stock-video-card">
+        <video class="stock-video" controls playsinline preload="metadata" poster="images/28.webp">
+          <source src="videos/4.mp4" type="video/mp4">
+        </video>
+        <p>Работы на крыше дома</p>
+      </div>
+
+      <!-- Видео 3 -->
+      <div class="stock-video-card">
+        <video class="stock-video" controls playsinline preload="metadata" poster="images/27.webp">
+          <source src="videos/1.mp4" type="video/mp4">
+        </video>
+        <p>Работа бригады на объекте</p>
+      </div>
+
+      <!-- Видео 4 -->
+      <div class="stock-video-card">
+        <video class="stock-video" controls playsinline preload="metadata" poster="images/31.webp">
+          <source src="videos/3.mp4" type="video/mp4">
+        </video>
+        <p>Монтаж элементов кровли</p>
+      </div>
+
+      <!-- Видео 5 -->
+      <div class="stock-video-card">
+        <video class="stock-video" controls playsinline preload="metadata" poster="images/34.webp">
+          <source src="videos/2.mp4" type="video/mp4">
+        </video>
+        <p>Строительство жилого дома</p>
+      </div>
+
+      <!-- Видео 6 -->
+      <div class="stock-video-card">
+        <video class="stock-video" controls playsinline preload="metadata" poster="images/35.webp">
+          <source src="videos/5.mp4" type="video/mp4">
+        </video>
+        <p>Строительство и монтаж кровли</p>
+      </div>
+
+    </div>
+  </div>
 </section>
+
+<style>
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .stock-video-card {
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .stock-video {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #111;
+  }
+
+  .stock-video-card p {
+    margin: 12px 0 0;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* Планшет */
+  @media (max-width: 900px) {
+    .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stock-video {
+      height: 240px;
+    }
+  }
+
+  /* Телефон */
+  @media (max-width: 600px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .stock-video {
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
+</style>
 <!-- ============================================================
      9. ФОТО РАБОТ И ПРОЦЕССА (портфолио)
      ============================================================ -->
@@ -1015,14 +1140,14 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <h2 class="section-title reveal" style="margin-bottom:16px;">Показываем процесс, а не только результат</h2>
 <p class="lead reveal" style="margin-bottom:36px;">Смотрите этапы работ и результат. Для нового проекта сюда лучше добавить реальные фотографии объектов: особенно полезны кадры «до → процесс → после».</p>
 <div class="portfolio-grid reveal" id="portfolioGrid">
-<div class="portfolio-item tilt" data-cat="floor"><div class="ph ph-square"><!-- images/17.webp --><img alt="Ремонт деревянного пола" class="zoomimg" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85"/></div><div class="portfolio-info"><div><h4>Утепление крыши</h4><span class="cat">Полы</span></div></div></div>
-<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/18.webp --><img alt="Перекрытие крыши" class="zoomimg" src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&w=1200&q=85"/></div><div class="portfolio-info"><div><h4>Перекрытие крыши</h4><span class="cat">Кровля</span></div></div></div>
-<div class="portfolio-item tilt" data-cat="foundation"><div class="ph ph-square"><!-- images/19.webp --><img alt="Фундамент и бетонные работы" class="zoomimg" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85"/></div><div class="portfolio-info"><div><h4>Фундамент и бетонные работы</h4><span class="cat">Фундамент</span></div></div></div>
-<div class="portfolio-item tilt" data-cat="house"><div class="ph ph-square"><!-- images/20.webp --><img alt="Строительство дома" class="zoomimg" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85"/></div><div class="portfolio-info"><div><h4>Строительство дома</h4><span class="cat">Дом под ключ</span></div></div></div>
-<div class="portfolio-item tilt" data-cat="facade"><div class="ph ph-square"><!-- images/21.webp --><img alt="Ремонт и обшивка фасада" class="zoomimg" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85"/></div><div class="portfolio-info"><div><h4>Ремонт и обшивка фасада</h4><span class="cat">Фасад</span></div></div></div>
-<div class="portfolio-item tilt" data-cat="bath"><div class="ph ph-square"><!-- images/22.webp --><img alt="Строительство бани" class="zoomimg" src="https://images.unsplash.com/photo-1562259949-e8e7682d7828?auto=format&fit=crop&w=1400&q=85"/></div><div class="portfolio-info"><div><h4>Баня под ключ</h4><span class="cat">Баня</span></div></div></div>
-<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/23.webp --><img alt="Работы СТРОЙРЕМОНТ на объекте" class="zoomimg" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85"/></div><div class="portfolio-info"><div><h4>Кровельные работы</h4><span class="cat">Кровля</span></div></div></div>
-<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/24.webp --><img alt="Работы СТРОЙРЕМОНТ на объекте" class="zoomimg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"/></div><div class="portfolio-info"><div><h4>Ремонт протечек и кровли</h4><span class="cat">Кровля</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="floor"><div class="ph ph-square"><!-- images/3.webp --><img alt="Ремонт деревянного пола" class="zoomimg" src="images/3.webp"/></div><div class="portfolio-info"><div><h4>Утепление крыши</h4><span class="cat">Полы</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/4.webp --><img alt="Перекрытие крыши" class="zoomimg" src="images/4.webp"/></div><div class="portfolio-info"><div><h4>Перекрытие крыши</h4><span class="cat">Кровля</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="foundation"><div class="ph ph-square"><!-- images/5.webp --><img alt="Фундамент и бетонные работы" class="zoomimg" src="images/5.webp"/></div><div class="portfolio-info"><div><h4>Фундамент и бетонные работы</h4><span class="cat">Фундамент</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="house"><div class="ph ph-square"><!-- images/6.webp --><img alt="Строительство дома" class="zoomimg" src="images/6.webp"/></div><div class="portfolio-info"><div><h4>Строительство дома</h4><span class="cat">Дом под ключ</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="facade"><div class="ph ph-square"><!-- images/7.webp --><img alt="Ремонт и обшивка фасада" class="zoomimg" src="images/7.webp"/></div><div class="portfolio-info"><div><h4>Ремонт и обшивка фасада</h4><span class="cat">Фасад</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="bath"><div class="ph ph-square"><!-- images/8.webp --><img alt="Строительство бани" class="zoomimg" src="images/8.webp"/></div><div class="portfolio-info"><div><h4>Баня под ключ</h4><span class="cat">Баня</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/9.webp --><img alt="Работы СТРОЙРЕМОНТ-МСК на объекте" class="zoomimg" src="images/9.webp"/></div><div class="portfolio-info"><div><h4>Кровельные работы</h4><span class="cat">Кровля</span></div></div></div>
+<div class="portfolio-item tilt" data-cat="roof"><div class="ph ph-square"><!-- images/10.webp --><img alt="Работы СТРОЙРЕМОНТ-МСК на объекте" class="zoomimg" src="images/10.webp"/></div><div class="portfolio-info"><div><h4>Ремонт протечек и кровли</h4><span class="cat">Кровля</span></div></div></div>
 </div>
 </div>
 </section>
@@ -1145,6 +1270,26 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Грант Грант</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Отличная команда! Профессионалы своего дела. Потребовалось отремонтировать кровлю после урагана. Приехали вовремя,как договаривались. Выполнили работу быстро. Качество отличное. Советую команду, как специалистов. При необходимости обращусь к ним.</p><div class="review-meta">09.12.2024</div></article>
 </div>
 </div>
+<div class="review-page" data-review-page="7">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Даня</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Нужен был ремонт квартиры, обратились к Александру. Всё выполнено очень качественно, очень приятный молодой человек.</p><div class="review-meta">11.05.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">даша антихайп</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Хороший мастер, делал нам туалет с ванной под ключ, всё сделано хорошо и в сроки. Дал гарантию.</p><div class="review-meta">11.05.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Ралина Салихова</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Большое спасибо Александру за его работу! Всё было сделано вовремя и очень качественно. Цены вполне приемлемые.</p><div class="review-meta">24.04.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Станислав Изилянов</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Сделали быстро и аккуратно. В итоге квартира теперь в хорошем состоянии.</p><div class="review-meta">22.04.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Чехова Мария</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Спасибо Александру за работу, сделано всё качественно и в сроки! Ремонт понравился.</p><div class="review-meta">26.03.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Гюлай Исмайылова</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Всё очень понравилось и сделано в лучшем виде. Цены прекрасные, вежливость и отличный подход к клиенту.</p><div class="review-meta">24.03.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Ангелина Мирная</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Сделал всё в указанный срок, косметический ремонт по цене идеально вошёл в бюджет. Сделано аккуратно.</p><div class="review-meta">14.03.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">тимофей</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Делали косметический ремонт в квартире. Александр выполнил работу качественно и ответственно подошёл к объекту.</p><div class="review-meta">12.03.2025</div></article>
+</div>
+<div class="review-page" data-review-page="8">
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">айнура жантасова</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Спасибо большое Александру, сделал всё быстро и качественно! Работы были выполнены в срок и с высоким качеством.</p><div class="review-meta">16.02.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Джанет Зафесов</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Работа была выполнена на профессиональном уровне, результат превзошёл ожидания. Все этапы ремонта проходили в срок, мастера прислушивались к пожеланиям.</p><div class="review-meta">14.02.2025</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">лия т.</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Хочу выразить благодарность Александру за великолепный монтаж душевой кабины! Всё установлено аккуратно и качественно.</p><div class="review-meta">13.12.2024</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Софья Плотникова</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Недавно завершился ремонт нашей квартиры, мы в восторге! Работа выполнена на высоком уровне, мастера были внимательны к деталям.</p><div class="review-meta">29.11.2024</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Елена Владимировна</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Заказала капитальный ремонт квартиры, и осталась очень довольна. Мастер учёл все пожелания и сроки.</p><div class="review-meta">27.10.2024</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Динарочка Морозова</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Александр прекрасно выполнил ремонт в моём доме. Его внимание к деталям и профессионализм впечатляют.</p><div class="review-meta">04.10.2024</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Дарья Боброва</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Спасибо за работу! Ремонт выполнен отлично, Александр профессионал своего дела.</p><div class="review-meta">15.08.2024</div></article>
+<article class="review-card"><span class="quote-mark">"</span><div class="review-head"><div><div class="review-name">Диана П.</div><div class="stars">Отзыв клиента</div></div></div><p class="review-text">Отличный специалист! Быстро и качественно, а когда не хватило фурнитуры, Александр сам съездил и купил всё необходимое.</p><div class="review-meta">29.06.2024</div></article>
+</div>
 <div aria-label="Навигация по отзывам" class="reviews-controls">
 <button aria-label="Предыдущие отзывы" class="review-nav" id="reviewsPrev" type="button">←</button>
 <div class="review-dots" id="reviewDots">
@@ -1155,6 +1300,8 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <button class="review-dot" data-review-page="4" aria-label="Страница отзывов 5" aria-current="false" type="button"></button>
 <button class="review-dot" data-review-page="5" aria-label="Страница отзывов 6" aria-current="false" type="button"></button>
 <button class="review-dot" data-review-page="6" aria-label="Страница отзывов 7" aria-current="false" type="button"></button>
+<button class="review-dot" data-review-page="7" aria-label="Страница отзывов 8" aria-current="false" type="button"></button>
+<button class="review-dot" data-review-page="8" aria-label="Страница отзывов 9" aria-current="false" type="button"></button>
 </div>
 <button aria-label="Следующие отзывы" class="review-nav" id="reviewsNext" type="button">→</button>
 </div>
@@ -1169,15 +1316,14 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <span class="eyebrow reveal">Галерея</span>
 <h2 class="section-title reveal" style="margin-bottom:36px;">Ещё примеры работ</h2>
 <div class="gallery-grid reveal">
-<div class="gallery-item"><div class="ph"><!-- images/30.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85"/></div></div>
-<div class="gallery-item"><div class="ph"><!-- images/31.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85"/></div></div>
-<div class="gallery-item"><div class="ph"><!-- images/32.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85"/></div></div>
-<div class="gallery-item"><div class="ph"><!-- images/33.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85"/></div></div>
-<div class="gallery-item"><div class="ph"><!-- images/34.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=85"/></div></div>
-<div class="gallery-item"><div class="ph"><!-- images/35.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85"/></div></div>
-<div class="gallery-item"><div class="ph"><!-- images/36.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85"/></div></div>
-<div class="gallery-item"><div class="ph"><!-- images/37.webp --><img alt="" class="zoomimg" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"/></div></div>
-</div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 11" class="zoomimg" src="images/11.webp" loading="lazy"/></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 12" class="zoomimg" src="images/12.webp" loading="lazy"/></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 13" class="zoomimg" src="images/13.webp" loading="lazy"/></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 14" class="zoomimg" src="images/14.webp" loading="lazy"/></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 15" class="zoomimg" src="images/15.webp" loading="lazy"/></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 16" class="zoomimg" src="images/16.webp" loading="lazy"/></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 17" class="zoomimg" src="images/17.webp" loading="lazy"/></div></div>
+<div class="gallery-item"><div class="ph"><img alt="Фото работы 18" class="zoomimg" src="images/18.webp" loading="lazy"/></div></div>
 </div>
 </section>
 <!-- ============================================================
@@ -1207,8 +1353,8 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <div class="info-visual reveal">
 <div class="ph ph-photo">
 <!-- images/2.webp — фото бригады для раздела «о компании» -->
-<img alt="Бригада СТРОЙРЕМОНТ" class="zoomimg" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85"/>
-<span class="spec-tag" style="bottom:14px; right:14px; top:auto; left:auto;"><b>Один ответственный за весь результат</b><span>10+ лет опыта</span></span>
+<img alt="Бригада СТРОЙРЕМОНТ-МСК" class="zoomimg" src="images/37.webp"/>
+<span class="spec-tag" style="bottom:14px; right:14px; top:auto; left:auto;"><b>Роман, владелец компании</b><span>Лично контролирует результат</span></span>
 </div>
 </div>
 <div class="info-copy reveal">
@@ -1255,7 +1401,7 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <div class="footer-statement">Течёт крыша? Стройка встала? Приедем и решим.</div>
 <div class="footer-grid">
 <div>
-<h4>СТРОЙРЕМОНТ</h4>
+<h4>СТРОЙРЕМОНТ-МСК</h4>
 <p>Когда не хочется годами собирать ремонт по частям.<br/>Москва и Московская область.<br/>Работаем по договору. Даём гарантию до 5 лет.</p>
 <p style="margin-top:12px;"><strong class="mono">Рейтинг 4.8</strong> (— оценок)</p>
 </div>
@@ -1291,7 +1437,7 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 <button data-modal="policy-guarantee" type="button">Гарантийные обязательства</button>
 </div>
 <div class="footer-bottom">
-<span>© СТРОЙРЕМОНТ, 2026. Все цены ориентировочные, точная стоимость — после бесплатного замера.</span>
+<span>© СТРОЙРЕМОНТ-МСК, 2026. Все цены ориентировочные, точная стоимость — после бесплатного замера.</span>
 <span>Сайт не является публичной офертой.</span>
 </div>
 </div>
@@ -1410,9 +1556,8 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
 
   // ==========================================================
   // КВИЗ / КАЛЬКУЛЯТОР
-  // ==========================================================
   (function(){
-    var totalSteps = 5;
+    var totalSteps = 4;
     var current = 1;
     var answers = {};
     var comments = {};
@@ -1423,92 +1568,130 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
     var summaryBox = document.getElementById('quizSummary');
     var summaryText = document.getElementById('quizSummaryText');
     var summaryHint = document.getElementById('quizSummaryCopyHint');
+    var detailOptions = document.getElementById('quizDetailOptions');
+    var detailQuestion = document.getElementById('quizDetailQuestion');
 
-    var questionLabels = {
-      step1: 'Задача',
-      step2: 'Площадь объекта',
-      step3: 'Материал',
-      step4: 'Сроки начала работ'
+    var detailsByCategory = {
+      "Заборы под ключ": ["Профнастил","Дерево","Металлический штакетник","Секционный забор","Пока не определился"],
+      "Строительство фундаментов": ["Ленточный","Свайный / свайно-ростверковый","Плитный","Под дом","Под баню / пристройку","Нужна рекомендация"],
+      "Автоматические ворота": ["Откатные","Распашные","Новые ворота с автоматикой","Автоматика на существующие ворота","Нужна рекомендация"],
+      "Строительство веранд и террас": ["Открытая терраса","Закрытая / тёплая веранда","Пристройка к дому","Отдельная конструкция","Пока не определился"],
+      "Навесы для автомобилей": ["На 1 автомобиль","На 2 автомобиля","Стеновой / пристроенный","Отдельно стоящий","Нужна рекомендация"],
+      "Укладка тротуарной плитки": ["Дорожки","Двор / площадка","Парковка","Отмостка","Нужна подготовка основания"],
+      "Обшивка и утепление фасадов": ["Утепление + обшивка","Только обшивка","Ремонт существующего фасада","Сайдинг","Фасадные панели","Нужна рекомендация"],
+      "Современные хозблоки": ["Хозблок","Мастерская","Склад / хранение","Санитарный блок","Нужна планировка"],
+      "Дома": ["Одноэтажный дом","Двухэтажный дом","Дом с мансардой","Каркасный дом","Дом из бруса","Дом из газобетона","Дом из кирпича","Дом для постоянного проживания","Дачный дом","Другое решение","Нужна помощь с выбором"],
+      "Бани": ["Каркасная баня","Баня из бруса","Баня из бревна","Кирпичная баня","Баня из газобетона","Нужна помощь с выбором"],
+      "Кровельные работы и ремонт крыш": ["Ремонт протечек","Полная замена кровли","Монтаж новой кровли","Утепление кровли","Нужна диагностика"],
+      "Крыльца и входные группы": ["Новое крыльцо","Ремонт существующего","Ступени","Козырёк / навес","Входная группа под ключ"],
+      "Отмостка и водоотведение": ["Отмостка","Ливневая канализация","Дренаж участка","Водоотведение от дома","Отмостка + водоотведение"]
     };
 
     function renderProgress(){
       stepLabel.textContent = 'Вопрос ' + current + ' из ' + totalSteps;
-      var pct = Math.round((current/totalSteps)*100);
+      var pct = Math.round((current / totalSteps) * 100);
       percentLabel.textContent = pct + '%';
       fill.style.width = pct + '%';
     }
+
     function buildSummaryText(){
       var lines = [];
-      ['step1','step2','step3','step4'].forEach(function(key){
-        var value = answers[key];
-        var num = key.replace('step','');
-        if(value){ lines.push(questionLabels[key] + ': ' + value); }
-        if(comments[key]){ lines.push('Комментарий к вопросу ' + num + ': ' + comments[key]); }
+      if(answers.step1) lines.push('Направление: ' + answers.step1);
+      if(answers.step2) lines.push('Детали: ' + answers.step2);
+      if(answers.step3) lines.push('Срочность: ' + answers.step3);
+      ['step1','step2','step3'].forEach(function(key){
+        if(comments[key]) lines.push('Комментарий: ' + comments[key]);
       });
       return lines.join('\n');
     }
+
     function renderSummary(){
-      if(!summaryText) return;
-      var text = buildSummaryText();
-      summaryText.textContent = text || 'Ответы не выбраны';
+      if(summaryText) summaryText.textContent = buildSummaryText() || 'Ответы не выбраны';
     }
+
     function goTo(n){
       current = n;
-      steps.forEach(function(s){ s.classList.toggle('active', parseInt(s.getAttribute('data-step'),10) === n); });
+      steps.forEach(function(s){
+        s.classList.toggle('active', parseInt(s.getAttribute('data-step'),10) === n);
+      });
       renderProgress();
-      if(n === totalSteps){ renderSummary(); }
+      if(n === 4) renderSummary();
     }
-    renderProgress();
 
-    steps.forEach(function(step){
-      var stepNum = parseInt(step.getAttribute('data-step'),10);
+    function renderDetails(){
+      var category = answers.step1;
+      var options = detailsByCategory[category] || ['Опишите задачу своими словами', 'Нужна консультация', 'Пока не определился'];
+      detailOptions.innerHTML = '';
+      options.forEach(function(value, index){
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'quiz-opt';
+        btn.setAttribute('data-value', value);
+        btn.innerHTML = '<span class="qo-photo qo-placeholder"><span>' + (index + 1) + '</span></span>' + value;
+        detailOptions.appendChild(btn);
+        btn.addEventListener('click', function(){
+          detailOptions.querySelectorAll('.quiz-opt').forEach(function(o){ o.classList.remove('selected'); });
+          btn.classList.add('selected');
+          answers.step2 = value;
+          document.getElementById('quizNext2').disabled = false;
+        });
+      });
+      if(detailQuestion) detailQuestion.textContent = 'Уточните детали: ' + category;
+      document.getElementById('quizNext2').disabled = !answers.step2;
+    }
+
+    function bindChoiceGroup(stepNum){
+      var step = document.querySelector('.quiz-step[data-step="' + stepNum + '"]');
+      if(!step) return;
       var group = step.querySelector('.quiz-options');
       if(!group) return;
-      var isMulti = group.getAttribute('data-multi') === 'true';
-      var autoAdvance = group.getAttribute('data-autoadvance') === 'true';
-      var opts = group.querySelectorAll('.quiz-opt');
-
-      opts.forEach(function(opt){
+      group.querySelectorAll('.quiz-opt').forEach(function(opt){
         opt.addEventListener('click', function(){
-          if(isMulti){
-            opt.classList.toggle('selected');
-            var anySelected = group.querySelectorAll('.quiz-opt.selected').length > 0;
-            var nextBtn = document.getElementById('quizNext' + stepNum);
-            if(nextBtn) nextBtn.disabled = !anySelected;
-          } else {
-            opts.forEach(function(o){ o.classList.remove('selected'); });
-            opt.classList.add('selected');
-            answers['step'+stepNum] = opt.getAttribute('data-value');
-            if(autoAdvance){ setTimeout(function(){ if(stepNum < totalSteps) goTo(stepNum+1); }, 220); }
-          }
+          group.querySelectorAll('.quiz-opt').forEach(function(o){ o.classList.remove('selected'); });
+          opt.classList.add('selected');
+          answers['step' + stepNum] = opt.getAttribute('data-value');
+          var nextBtn = document.getElementById('quizNext' + stepNum);
+          if(nextBtn) nextBtn.disabled = false;
         });
-      });
-      var commentField = step.querySelector('.quiz-comment');
-      if(commentField){
-        commentField.addEventListener('input', function(){
-          comments['step'+stepNum] = commentField.value.trim();
-        });
-      }
-    });
-
-    var next1 = document.getElementById('quizNext1');
-    if(next1){
-      next1.addEventListener('click', function(){
-        var selected = document.querySelectorAll('.quiz-step[data-step="1"] .quiz-opt.selected');
-        answers.step1 = Array.prototype.map.call(selected, function(o){ return o.getAttribute('data-value'); }).join(', ');
-        goTo(2);
       });
     }
 
-    document.querySelectorAll('.quiz-back').forEach(function(btn){
-      btn.addEventListener('click', function(){ goTo(parseInt(btn.getAttribute('data-back'),10)); });
+    document.querySelectorAll('.quiz-comment').forEach(function(field){
+      field.addEventListener('input', function(){
+        comments[field.getAttribute('data-comment-step')] = field.value.trim();
+      });
     });
 
-    // ---- Копирование выбора из конфигуратора по клику ----
+    bindChoiceGroup(1);
+    bindChoiceGroup(3);
+
+    document.getElementById('quizNext1').addEventListener('click', function(){
+      if(!answers.step1) return;
+      answers.step2 = '';
+      renderDetails();
+      goTo(2);
+    });
+
+    document.getElementById('quizNext2').addEventListener('click', function(){
+      if(!answers.step2) return;
+      goTo(3);
+    });
+
+    document.getElementById('quizNext3').addEventListener('click', function(){
+      if(!answers.step3) return;
+      goTo(4);
+    });
+
+    document.querySelectorAll('.quiz-back').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        goTo(parseInt(btn.getAttribute('data-back'),10));
+      });
+    });
+
     if(summaryBox){
       function copySummary(){
-        var text = buildSummaryText();
-        if(!text) return;
+        var summary = buildSummaryText();
+        if(!summary) return;
         function showCopied(){
           if(!summaryHint) return;
           var original = summaryHint.textContent;
@@ -1520,29 +1703,34 @@ h1,h2,h3,h4,h5,h6,.eyebrow,.svc-num{font-family:'Roboto Condensed','Inter',sans-
           }, 1600);
         }
         if(navigator.clipboard && navigator.clipboard.writeText){
-          navigator.clipboard.writeText(text).then(showCopied).catch(function(){
-            fallbackCopy(text, showCopied);
-          });
-        } else {
-          fallbackCopy(text, showCopied);
-        }
+          navigator.clipboard.writeText(summary).then(showCopied).catch(function(){ fallbackCopy(summary, showCopied); });
+        } else { fallbackCopy(summary, showCopied); }
       }
-      function fallbackCopy(text, cb){
+      function fallbackCopy(value, cb){
         var ta = document.createElement('textarea');
-        ta.value = text;
+        ta.value = value;
         ta.style.position = 'fixed';
         ta.style.opacity = '0';
         document.body.appendChild(ta);
         ta.select();
-        try{ document.execCommand('copy'); }catch(e){}
+        try { document.execCommand('copy'); } catch(e){}
         document.body.removeChild(ta);
-        if(cb) cb();
+        cb();
       }
       summaryBox.addEventListener('click', copySummary);
-      summaryBox.addEventListener('keydown', function(e){
-        if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); copySummary(); }
+      summaryBox.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); copySummary(); } });
+    }
+
+    var form = document.getElementById('quizContactForm');
+    if(form){
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var btn = form.querySelector('button[type="submit"]');
+        if(btn){ btn.textContent = 'Спасибо! Мы свяжемся с вами'; btn.disabled = true; }
       });
     }
+
+    renderProgress();
   })();
 
   // ---- Карусель отзывов ----
