@@ -1946,3 +1946,132 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 </script></body>
 </html>
+
+<style id="mobile-final-compact">
+/* ФИНАЛЬНАЯ МОБИЛЬНАЯ ВЕРСИЯ
+   1) Калькулятор: без фото, 3 категории в ряд.
+   2) Текстовые блоки на телефоне визуально сокращены примерно вдвое.
+*/
+@media (max-width:760px){
+  /* Калькулятор */
+  #quiz .quiz-options,
+  #quiz .quiz-options.cols-2{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:6px!important;
+  }
+
+  #quiz .quiz-opt .qo-photo,
+  #quiz .quiz-opt .qo-photo.qo-placeholder,
+  #quiz .quiz-opt .qo-photo img{
+    display:none!important;
+  }
+
+  #quiz .quiz-opt{
+    min-height:42px!important;
+    padding:8px 5px!important;
+    font-size:11.5px!important;
+    line-height:1.15!important;
+    gap:0!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+
+  #quiz .quiz-opt.selected::after{
+    font-size:8px!important;
+    margin-top:3px!important;
+  }
+
+  #quiz .quiz-question{
+    font-size:17px!important;
+    line-height:1.2!important;
+    margin-bottom:12px!important;
+  }
+
+  #quiz .quiz-intro h2{
+    font-size:25px!important;
+    line-height:1.1!important;
+  }
+
+  #quiz .quiz-intro p{
+    font-size:13px!important;
+    line-height:1.4!important;
+  }
+
+  /* Меньше текста в карточках и информационных блоках */
+  .quick-item p,
+  .cat-card p,
+  .svc-card p,
+  .adv-item p,
+  .step p,
+  .review-text,
+  .info-copy p,
+  .faq-a p,
+  .final-note,
+  .cookie-inner p{
+    font-size:12px!important;
+    line-height:1.4!important;
+    display:-webkit-box!important;
+    -webkit-box-orient:vertical!important;
+    -webkit-line-clamp:3!important;
+    overflow:hidden!important;
+  }
+
+  .quick-item h4,
+  .cat-card h4,
+  .svc-card h4,
+  .adv-item h3,
+  .step h3,
+  .review-name,
+  .faq-q h3{
+    font-size:13px!important;
+    line-height:1.2!important;
+  }
+
+  .hero-copy .lead,
+  .lead{
+    font-size:13px!important;
+    line-height:1.45!important;
+    display:-webkit-box!important;
+    -webkit-box-orient:vertical!important;
+    -webkit-line-clamp:3!important;
+    overflow:hidden!important;
+  }
+
+  .eyebrow{
+    font-size:10px!important;
+    margin-bottom:10px!important;
+  }
+
+  .section-title{
+    font-size:25px!important;
+    line-height:1.1!important;
+  }
+
+  .quick-item,
+  .svc-card,
+  .adv-item,
+  .step{
+    padding:14px!important;
+  }
+
+  .cat-card .cat-label{
+    padding:10px!important;
+    gap:6px!important;
+  }
+
+  .review-card{
+    padding:10px!important;
+  }
+
+  .info-copy h3{
+    font-size:16px!important;
+    margin-top:18px!important;
+    margin-bottom:7px!important;
+  }
+
+  .modal-box p{
+    font-size:12px!important;
+    line-height:1.45!important;
+  }
+}
+</style>
